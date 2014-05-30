@@ -1,0 +1,8 @@
+-cp src/main/haxe
+-cp src/test/haxe
+
+
+-main Test
+-php test/php_test
+
+--connect 2331

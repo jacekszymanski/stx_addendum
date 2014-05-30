@@ -1,0 +1,4 @@
+-main Test
+-cpp test/cpp_test
+
+--connect 2331

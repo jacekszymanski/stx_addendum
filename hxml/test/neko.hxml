@@ -1,0 +1,10 @@
+-cp src/main/haxe
+-cp src/test/haxe
+
+-lib tink_core
+-lib pointwise
+
+-main Test
+-neko test/neko_test.n
+
+--connect 2331
