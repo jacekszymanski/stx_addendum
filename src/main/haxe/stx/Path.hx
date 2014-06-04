@@ -19,10 +19,16 @@ abstract Path(String) from String to String{
   public function nodes():Array<String>{
     return this.split('/');
   }
-  @:static public function fromArray(arr:Array<String>):Path{
+  @:from static public function fromArray(arr:Array<String>):Path{
     return arr.join('/');
+  }
+  @:to public function toArray():Array<String>{
+    return this.split('/');
   }
   public function iterator():Array<String>{
     return this.split('/');
+  }
+  public function equals(p:Path){
+    return Strings.equals(this,p);
   }
 }
