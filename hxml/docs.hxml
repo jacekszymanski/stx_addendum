@@ -1,0 +1,7 @@
+-cp src/main/haxe
+-cp docs
+
+-main Imports
+-xml build/stx.xml
+
+-cmd haxelib run dox -i build -r /stx_addendum -o docs/api -in stx -ex haxe
