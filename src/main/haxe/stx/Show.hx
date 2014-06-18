@@ -55,12 +55,12 @@ class Show {
     }
   }
 }
-class NullShow{
+private class NullShow{
   static public function toString<A>(v:A):String{
     return "null";
   }
 }
-class EnumShow{
+private class EnumShow{
   static public function toString(v:Dynamic):String {
     var buf = Type.enumConstructor(v);
     var params = Type.enumParameters(v);
@@ -74,7 +74,7 @@ class EnumShow{
     }
   }
 }
-class ObjectShow {
+private class ObjectShow {
   static public function toString(v:Dynamic):String{
     if(Reflect.fields(v).length == 0){
       return Std.string(v); // fix : Haxe mistypes nodejs native error
@@ -87,7 +87,7 @@ class ObjectShow {
     return "{" + buf.join(",") + "}";
   }
 }
-class ArrayShow {
+private class ArrayShow {
 	public static function toString<T>(v: Array<T>) {
     return toStringWith(v, Show.getShowFor(v[0]));
   }
@@ -105,7 +105,7 @@ class ArrayShow {
     });
   }
 }
-class IterableShow {
+private class IterableShow {
 	public static function toString<T>(i: Iterable<T>, ?show: T -> String, ?prefix: String = '(', ?suffix: String = ')', ?sep = ', ') {
     return mkString(i, show, prefix, suffix, sep);
   }
@@ -125,22 +125,22 @@ class IterableShow {
     return s + suffix;
   }
 }
-class BoolShow {
+private class BoolShow {
 	public static function toString(v : Bool) : String {
     return if (v) "true" else "false";  
   }
 }
-class IntShow {
+private class IntShow {
 	public static function toString(v: Int) : String {
     return "" + v;
   }
 }
-class FloatShow {
+private class FloatShow {
 	public static function toString(v: Float) : String {
     return "" + v;
   }
 }
-class StackItemShow{
+private class StackItemShow{
   static public function toString(s:StackItem){
     return 
       switch (s){
