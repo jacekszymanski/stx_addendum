@@ -11,7 +11,8 @@ using stx.Iterables;
 using stx.Maths;
 using stx.Compose;
 
-@doc("
+/**
+		
   This is a good class to use in conjuncture with stx.UnitTest, stx.test.Assert and filters.
 
   ```
@@ -22,25 +23,36 @@ using stx.Compose;
   nice.
 
   Unlikely to screw with other global namespace stuff, but keep an eye on it.
-")
+
+	**/
 class Compare{
-  @doc("Predicator for value v.")
+  /**
+		Predicator for value v.
+	**/
   @:noUsing static public inline function compare<T>(v:T){
     return new Predicator(v);
   }
-  @doc("Always returns true, no matter the input.")
+  /**
+		Always returns true, no matter the input.
+	**/
   @:noUsing static public inline function always<T>():Predicate<T>{
     return function(value:T){return true;}
   }
-  @doc("Always returns false, no matter the input.")
+  /**
+		Always returns false, no matter the input.
+	**/
   @:noUsing static public inline function never<T>():Predicate<T>{
     return function(value:T){return false;}
   }
-  @doc("Bools.isTrue")
+  /**
+		Bools.isTrue
+	**/
   @:noUsing static public inline function ok():Predicate<Bool>{
     return function(value:Bool){return value;}
   }
-  @doc("Bools.isFalse")
+  /**
+		Bools.isFalse
+	**/
   @:noUsing static public inline function no():Predicate<Bool>{
     return function(value:Bool){return !value;}
   }
@@ -58,11 +70,15 @@ class Compare{
       return !(er == null) && (type != null ? Std.is(er,type) : true);
     }
   }
-  @doc("null-check")
+  /**
+		null-check
+	**/
   @:noUsing static public inline function nl<T>():Predicate<T>{
     return function(value:T) {return value == null;}
   }
-  @doc("not-null-check")
+  /**
+		not-null-check
+	**/
   @:noUsing static public inline function ntnl<T>():Predicate<T>{
     return function(value:T) {return value != null;}
   }
@@ -72,23 +88,33 @@ class Compare{
   @:noUsing static public inline function matches(reg:EReg):Predicate<String>{
     return function(str:String){return reg.match(str);}
   }
-  @doc("equals")
+  /**
+		equals
+	**/
   @:noUsing static public inline function eq<T>(p:T):Predicate<T>{
     return Equal.getEqualFor(p).bind(p);
   }
-  @doc("greater than")
+  /**
+		greater than
+	**/
   @:noUsing static public inline function gt<T>(p:T):Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.eq.bind(1));
   }
-  @doc("greater than or equal")
+  /**
+		greater than or equal
+	**/
   @:noUsing static public inline function gteq<T>(p:T):Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.gteq.bind(0));
   }
-  @doc("less than")
+  /**
+		less than
+	**/
   @:noUsing static public inline function lt<T>(p:T):Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.eq.bind(-1));
   }
-  @doc("less than or equal")
+  /**
+		less than or equal
+	**/
   @:noUsing static public inline function lteq<T>(p:T):Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.lteq.bind(0));
   }
@@ -101,36 +127,52 @@ abstract Predicate<T>(PredicateType<T>) from PredicateType<T> to PredicateType<T
   public function apply(v:T):Bool{
     return this(v);
   }
-  @doc("Produces a predicate that succeeds if both succeed.")
+  /**
+		Produces a predicate that succeeds if both succeed.
+	**/
   public inline function and(p: Predicate<T>): Predicate<T>{
     return PredicateLogic.and(this,p);
   }
-  @doc("Produces a predicate that succeeds if all input predicates succeed.")
+  /**
+		Produces a predicate that succeeds if all input predicates succeed.
+	**/
   public inline function andAll(ps: Iterable<Predicate<T>>): Predicate<T>{
     return PredicateLogic.andAll(this,ps);
   }
-  @doc("Produces a predicate that succeeds if one or other predicates succeed.")
+  /**
+		Produces a predicate that succeeds if one or other predicates succeed.
+	**/
   public inline function or(p: Predicate<T>): Predicate<T>{
     return PredicateLogic.or(this,p);
   }
-  @doc("Produces a predicate that succeeds if one or other, but not both predicates succeed.")
+  /**
+		Produces a predicate that succeeds if one or other, but not both predicates succeed.
+	**/
   public inline function xor(p: Predicate<T>): Predicate<T>{
     return PredicateLogic.xor(this,p);
   }
-  @doc("Produces a predicate that succeeds if the input predicate fails.")
+  /**
+		Produces a predicate that succeeds if the input predicate fails.
+	**/
   public inline function not():Predicate<T>{
     return PredicateLogic.not(this);
   } 
-  @doc("Produces a predicate that succeeds if any of the input predicates succeed.")
+  /**
+		Produces a predicate that succeeds if any of the input predicates succeed.
+	**/
   public inline function orAny(ps: Iterable<Predicate<T>>): Predicate<T> {
     return PredicateLogic.orAny(this,ps);
   }
-  @doc("Produces a Method from a Predicate.")
+  /**
+		Produces a Method from a Predicate.
+	**/
   @:to public function toMethod():Method<T,Bool>{
     return new Method(this);
   }
 }
-@doc("Caches function lookup for value.")
+/**
+		Caches function lookup for value.
+	**/
 class Predicator<T>{
   private var __eq__ : Eq<T>;
   private var __od__ : Ord<T>;
@@ -162,13 +204,17 @@ class Predicator<T>{
   }
 }
 class PredicateLogic{
-  @doc("Produces a predicate that succeeds if both succeed.")
+  /**
+		Produces a predicate that succeeds if both succeed.
+	**/
   static public function and<T>(p1: Predicate<T>, p2: Predicate<T>): Predicate<T> {
     return function(value:T) {
       return p1.apply(value) && p2.apply(value);
     }
   }
-  @doc("Produces a predicate that succeeds if all input predicates succeed.")
+  /**
+		Produces a predicate that succeeds if all input predicates succeed.
+	**/
   static public function andAll<T>(p1: Predicate<T>, ps: Iterable<Predicate<T>>): Predicate<T> {
     return function(value:T) {
       var result = p1.apply(value);
@@ -182,25 +228,33 @@ class PredicateLogic{
       return result;
     }
   }
-  @doc("Produces a predicate that succeeds if one or other predicates succeed.")
+  /**
+		Produces a predicate that succeeds if one or other predicates succeed.
+	**/
   static public function or<T>(p1: Predicate<T>, p2: Predicate<T>): Predicate<T> {
     return function(value:T) {
       return p1.apply(value) || p2.apply(value);
     }
   }
-  @doc("Produces a predicate that succeeds if one or other , but not both predicates succeed.")
+  /**
+		Produces a predicate that succeeds if one or other , but not both predicates succeed.
+	**/
   static public function xor<T>(p1: Predicate<T>, p2: Predicate<T>): Predicate<T> {
     return function(value:T) {
       return or(p1,p2).apply(value) && (!and(p1,p2).apply(value));
     }
   }
-  @doc("Produces a predicate that succeeds if the input predicate fails.")
+  /**
+		Produces a predicate that succeeds if the input predicate fails.
+	**/
   static public inline function not<T>(p1: Predicate<T>):Predicate<T>{
     return function(value:T){
       return !p1.apply(value);
     }
   }  
-  @doc("Produces a predicate that succeeds if any of the input predicates succeeds.")
+  /**
+		Produces a predicate that succeeds if any of the input predicates succeeds.
+	**/
   static public function orAny<T>(p1: Predicate<T>, ps: Iterable<Predicate<T>>): Predicate<T> {
     return function(value:T) {
       var result = p1.apply(value);

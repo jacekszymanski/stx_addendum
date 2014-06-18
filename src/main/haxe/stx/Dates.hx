@@ -5,17 +5,23 @@ using stx.Options;
 
 @:thx
 class Dates {
-  @doc("Compare dates")
+  /**
+		Compare dates
+	**/
   static public function compare(v1: Date, v2: Date) {  
     var diff = v1.getTime() - v2.getTime();
       
     return if (diff < 0) -1; else if (diff > 0) 1; else 0;
   }
-  @doc("Equality function for Dates")
+  /**
+		Equality function for Dates
+	**/
   static public function equals(v1: Date, v2: Date) {
     return v1.getTime() == v2.getTime();
   }
-  @doc("Stringify Date")
+  /**
+		Stringify Date
+	**/
   static public function toString(v: Date): String {
     return v.toString();
   }
@@ -35,12 +41,16 @@ class Dates {
   static public function sub(d0:Date,d1:Date):Date{
     return Date.fromTime(d0.getTime()-d1.getTime());
   }
-  /*@doc("snaps `dt` to the nearest `day`")
+  /*/**
+		snaps `dt` to the nearest `day`
+	**/
   static public function day(dt:Date,day:Week):Date{
 
     return Date.fromTime(dt.getTime() - ((dt.getDay() - day.toInt()) % 7) * 24 * 60 * 60 * 1000);
   }
-  @doc("snaps `dt` to a period `s`.")
+  /**
+		snaps `dt` to a period `s`.
+	**/
   static public function snap(dt:Date,s:DateSpan):Date{
     var time = dt.getTime();
     return switch (s) {

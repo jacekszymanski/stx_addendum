@@ -28,7 +28,9 @@ class Chunks{
   @:noUsing static public function create<A>(?c:A):Chunk<A>{
     return (c == null) ? Nil : Val(c);
   }
-  @doc('Produces a `Chunk` of `Array<A>` only if all chunks are defined.')
+  /**
+		Produces a `Chunk` of `Array<A>` only if all chunks are defined.
+	**/
   static public inline function all<A>(chks:Array<Chunk<A>>,?nilFail:Error):Chunk<Array<A>>{
     return chks.foldLeft(
         Val([]),

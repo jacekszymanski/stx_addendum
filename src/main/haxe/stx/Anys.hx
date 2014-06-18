@@ -236,7 +236,9 @@ class Anys {
         }
         return __interfLoop(cc.__super__,cl);
     }
-  @doc("Dive into an object using 'a:b:c' notation, returns an error with the unfound token in the path if the operation fails.")
+  /**
+		Dive into an object using 'a:b:c' notation, returns an error with the unfound token in the path if the operation fails.
+	**/
   static public function dive<A,B>(o:A,path:Path):Chunk<B>{
     if(o == null) return End(Error.withData(path,MatchError(path)));
     if(path == '') return cast Chunks.create(o);
@@ -263,7 +265,9 @@ class Anys {
     }
     return Chunks.create(val);
   }
-  @doc("Dive into an object using 'a:b:c' notation, returns a Nil if the operation fails")
+  /**
+		Dive into an object using 'a:b:c' notation, returns a Nil if the operation fails
+	**/
   static public function diveOption<A,B>(o:A,path:Path):Chunk<B>{
     if(o == null) return Nil;
     if(path == '') return Chunks.create(cast o);
@@ -287,7 +291,9 @@ class Anys {
     }
     return Chunks.create(val);
   }
-  @doc("Returns the values in `val` specified in `keys`, producing an error with the unfound keys if the operation fails.")
+  /**
+		Returns the values in `val` specified in `keys`, producing an error with the unfound keys if the operation fails.
+	**/
   static public function gather(val:Dynamic,keys:Array<String>):Upshot<Dynamic>{
     return keys.foldLeft(
       [],
@@ -317,7 +323,9 @@ class Anys {
       }
     );
   }
-  @doc("Set `v` in `data` at `path` using an `Path`, if `safe` is true, will not set on a previously existing value")
+  /**
+		Set `v` in `data` at `path` using an `Path`, if `safe` is true, will not set on a previously existing value
+	**/
   @:noUsing static public function set<V>(data:V,path:Path,v:Dynamic,?safe=true):V{
     var paths           = path.nodes();
     var last            = paths.pop();
@@ -341,11 +349,15 @@ class Anys {
     }
     return data;
   }
-  @doc("Call `set` with `safe=false`.")
+  /**
+		Call `set` with `safe=false`.
+	**/
   @:noUsing static public function replace<V>(data:V,path:Path,v:Dynamic):V{
     return set(data,path,v,false);
   }
-  @doc("Delete value at `key` in `data` using an `Path`.")
+  /**
+		Delete value at `key` in `data` using an `Path`.
+	**/
   static public function del<T>(data:T,key:Path):T{
     var keys  = key.nodes();
     var keys0 = keys.dropRight(1).reversed();
@@ -369,7 +381,9 @@ class Anys {
         function() return data
       );
   }
-  @doc("Construct `type` filled with fields of `y` will fail if `y` contains a superset (i.e, extra fields).")
+  /**
+		Construct `type` filled with fields of `y` will fail if `y` contains a superset (i.e, extra fields).
+	**/
   static public function constructWith<O,T>(type:Class<T>,y:O):Upshot<T>{
     return stx.Types.construct.bind(type,[]).catching()()
       .flatMap(
@@ -394,7 +408,9 @@ class Anys {
         }.catching()
       );
   }
-  @doc("Checks that a value at `path` exists on `o`.")
+  /**
+		Checks that a value at `path` exists on `o`.
+	**/
   static public function has(o:Dynamic,path:Path):Bool{
     var fn    = Reflect.field;
     var paths = path.nodes();

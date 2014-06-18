@@ -14,95 +14,125 @@ using stx.Options;
 using stx.Functions;
 
 class Eithers {
-  @doc("Creates a Left from any value")
+  /**
+		Creates a Left from any value
+	**/
   static public function toLeft<A, B>(v: A): Either<A, B> {
     return Left(v);
   }
-  @doc("Creates a Right from any value")
+  /**
+		Creates a Right from any value
+	**/
   static public function toRight<A, B>(v: B): Either<A, B> {
     return Right(v);
   }
-  @doc("Flips a Left to a Right or vice-versa.")
+  /**
+		Flips a Left to a Right or vice-versa.
+	**/
   static public function flip<A, B>(e: Either<A, B>): Either<B, A> {
     return switch(e) {
       case Left(v)  : Right(v);
       case Right(v) : Left(v);
     }
   }
-  @doc("Returns an `Option` which is `Some` if the either is `Left`, `None` otherwise.")
+  /**
+		Returns an `Option` which is `Some` if the either is `Left`, `None` otherwise.
+	**/
   static public function left<A, B>(e: Either<A, B>): Option<A> {
     return switch (e) {
       case Left(v) : Some(v);
       default      : None;
     }
   }
-  @doc("Returns true if either is Left.")
+  /**
+		Returns true if either is Left.
+	**/
   static public function isLeft<A, B>(e: Either<A, B>): Bool {
     return switch (e) {
       case Left(_)  :  true;
       case Right(_) : false;
     }
   }
-  @doc("Returns an option which is `Some` if the either is `Right`, `None` otherwise.")
+  /**
+		Returns an option which is `Some` if the either is `Right`, `None` otherwise.
+	**/
   static public function right<A, B>(e: Either<A, B>): Option<B> {
     return switch (e) {
       case Right(v) : Some(v); 
       default       : None;
     }
   }
-  @doc("Returns true if either is `Right`.")
+  /**
+		Returns true if either is `Right`.
+	**/
   static public function isRight<A, B>(e: Either<A, B>): Bool {
     return switch (e) {
       case Left(_)  :  false;
       case Right(_) : true;
     }
   }
-  @doc("Returns the raw value of an `Either`.")
+  /**
+		Returns the raw value of an `Either`.
+	**/
   static public function get<A>(e: Either<A, A>): A {
     return switch (e) {
       case Left(v)  : v;
       case Right(v) : v;
     }
   }
-  @doc("Transforms the value of an `Either` if it is `Left`.")
+  /**
+		Transforms the value of an `Either` if it is `Left`.
+	**/
   static public function mapLeft<A, B, C>(e: Either<A, B>, f: A -> C): Either<C, B> {
     return switch (e) {
       case Left(v)  : Left(f(v));
       case Right(v) : Right(v);
     }
   }
-  @doc("Transforms the value of an `Either`.")
+  /**
+		Transforms the value of an `Either`.
+	**/
   static public function map<A, B, C, D>(e: Either<A, B>, f1: A -> C, f2: B -> D): Either<C, D> {
     return switch (e) {
       case Left(v)  : Left(f1(v));
       case Right(v) : Right(f2(v));
     }
   }
-  @doc("Transforms the value of an `Either` if it is `Right`.")
+  /**
+		Transforms the value of an `Either` if it is `Right`.
+	**/
   static public function mapRight<A, B, D>(e: Either<A, B>, f: B -> D): Either<A, D> {
     return switch (e) {
       case Left(v)  : Left(v);
       case Right(v) : Right(f(v));
     }
   }
-  @doc("Creates a new `Either` with functions that take the value of the either and return a new Either.")
+  /**
+		Creates a new `Either` with functions that take the value of the either and return a new Either.
+	**/
   static public function flatMap<A, B, C, D>(e: Either<A, B>, f1: A -> Either<C, D>, f2: B -> Either<C, D>): Either<C, D> {
     return switch (e) {
       case Left(v)  : f1(v);
       case Right(v) : f2(v);
     }
   }
-  @doc("Creates a new Either if the original is Right.")
+  /**
+		Creates a new Either if the original is Right.
+	**/
   static public function flatMapRight<A, B, C , D>(e: Either<A, B>,f : B -> Either<C,D>):Either<C,D>{
     return
       flatMap(e,cast Eithers.toLeft,f);
   }
-  @doc("Creates a new Either if the original is Left.")
+  /**
+		Creates a new Either if the original is Left.
+	**/
   static public function flatMapLeft<A, B, C , D>(e: Either<A, B>,f : A -> Either<C,D>):Either<C,D>{
     return
       flatMap(e,f,cast Eithers.toRight);
   }
-  @doc("Composes two Eithers together. In case of conflicts, `Left` always wins.")
+  /**
+		Composes two Eithers together. In case of conflicts, `Left` always wins.
+	**/
   static public function composeLeft<A, B>(e1: Either<A, B>, e2: Either<A, B>, ac: A -> A -> A, bc: B -> B -> B): Either<A, B> {
     return switch (e1) {
       case Left(v1): switch (e2) {
@@ -116,7 +146,9 @@ class Eithers {
     }
   }
   
-  @doc("Composes two Eithers together. In case of conflicts, `Right` always wins.")
+  /**
+		Composes two Eithers together. In case of conflicts, `Right` always wins.
+	**/
   static public function composeRight<A, B>(e1: Either<A, B>, e2: Either<A, B>, ac: A -> A -> A, bc: B -> B -> B): Either<A, B> {
     return switch (e1) {
       case Left(v1)   : switch (e2) {

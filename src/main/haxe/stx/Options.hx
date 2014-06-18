@@ -30,47 +30,63 @@ class Options {
       case None     : throw 'Option undefined';
     }
   }
-  @doc("Produces Option.Some(t) if `t` is not null, Option.None otherwise.")
+  /**
+		Produces Option.Some(t) if `t` is not null, Option.None otherwise.
+	**/
   @:noUsing static public inline function create<T>(t: T): Option<T> {
     return if (t == null) None; else Some(t);
   }
-  @doc("Performs `f` on the contents of `o` if o != None")
+  /**
+		Performs `f` on the contents of `o` if o != None
+	**/
   static public function map<T, S>(o: Option<T>, f: T -> S): Option<S> {
     return switch (o) {
       case None   : None;
       case Some(v): Some(f(v));
     }
   }
-  @doc("Performs `f` on the contents of `o` if `o` != None")
+  /**
+		Performs `f` on the contents of `o` if `o` != None
+	**/
   static public function each<T>(o: Option<T>, f: T -> Void): Option<T> {
     return switch (o) {
       case None     : o;
       case Some(v)  : f(v); o;
     }
   }
-  @doc("Produces the result of `f` which takes the contents of `o` as a parameter.")
+  /**
+		Produces the result of `f` which takes the contents of `o` as a parameter.
+	**/
   static public function flatMap<T, S>(o: Option<T>, f: T -> Option<S>): Option<S> {
     return flatten(map(o, f));
   }
-  @doc("Produces the contents of `o`, throwing an error if `o` is None.")
+  /**
+		Produces the contents of `o`, throwing an error if `o` is None.
+	**/
   static public function val<T>(o: Option<T>): T {
     return switch (o) {
       case None   : throw Error.withData("Option is empty",IllegalOperationError);
       case Some(v): v;
     }
   }
-  @doc("Produces the value of `o` if not None, the result of `thunk` otherwise.")
+  /**
+		Produces the value of `o` if not None, the result of `thunk` otherwise.
+	**/
   static public function valOrUse<T>(o: Option<T>, thunk: Thunk<T>): T {
     return switch(o) {
       case None: thunk();
       case Some(v): v;
     }
   }
-  @doc("Produces the value of `o` if not None, `c` otherwise.")
+  /**
+		Produces the value of `o` if not None, `c` otherwise.
+	**/
   static public function valOrC<T>(o: Option<T>, c: T): T {
     return Options.valOrUse(o, thunk(c));
   }
-  @doc("Produces `o1` if it is Some, the result of `thunk` otherwise.")
+  /**
+		Produces `o1` if it is Some, the result of `thunk` otherwise.
+	**/
   static public function orElse<T>(o1: Option<T>, thunk: Thunk<Option<T>>): Option<T> {
     return switch (o1) {
       case None: thunk();
@@ -78,57 +94,75 @@ class Options {
       case Some(_): o1;
     }
   }
-  @doc("Produces `o1` if it is Some, `o2` otherwise.")
+  /**
+		Produces `o1` if it is Some, `o2` otherwise.
+	**/
   static public function orElseConst<T>(o1: Option<T>, o2: Option<T>): Option<T> {
     return Options.orElse(o1, o2.toThunk());
   }
-  @doc("Produces true if `o` is None, false otherwise.")
+  /**
+		Produces true if `o` is None, false otherwise.
+	**/
   static public function isEmpty<T>(o: Option<T>): Bool {
     return switch(o) {
       case None:    true;
       case Some(_): false;
     }
   }
-  @doc("Produces `true` if `o` is not None, `false` otherwise.")
+  /**
+		Produces `true` if `o` is not None, `false` otherwise.
+	**/
   static public function isDefined<T>(o: Option<T>): Bool {
     return switch(o) {
       case None:    false;
       case Some(_): true;
     }
   }
-	@doc("Produces an Array of length 0 if `o` is None, length 1 otherwise.")
+	/**
+		Produces an Array of length 0 if `o` is None, length 1 otherwise.
+	**/
   static public function toArray<T>(o: Option<T>): Array<T> {
     return switch (o) {
       case None:    [];
       case Some(v): [v];
     }
   }
-	@doc("Swallows `o1` and produces `o2`.")
+	/**
+		Swallows `o1` and produces `o2`.
+	**/
   static public function then<T, S>(o1: Option<T>, o2: Option<S>): Option<S> {
     return o2;
   }
-  @doc("Produces the input if predicate `f` returns true, None otherwise.")
+  /**
+		Produces the input if predicate `f` returns true, None otherwise.
+	**/
   static public function filter<T>(o: Option<T>, f: T -> Bool): Option<T> {
     return switch (o) {
       case None: None;
       case Some(v): if (f(v)) o else None;
     }
   }
-  @doc("Produces an Option where `o1` may contain another Option.")
+  /**
+		Produces an Option where `o1` may contain another Option.
+	**/
   static public function flatten<T>(o1: Option<Option<T>>): Option<T> {
     return switch (o1) {
       case None: None;
       case Some(o2): o2;
     }
   }
-  @doc("Produces a Tuple2 of `o1` and `o2`.")
+  /**
+		Produces a Tuple2 of `o1` and `o2`.
+	**/
   static public function zip<T, S>(o1: Option<T>, o2: Option<S>):Option<Tuple2<T,S>> {
     return switch (o1) {
       case None     : None;
       case Some(v1) : o2.map(tuple2.bind(v1));
     }
   }
-  @doc("Produces the result of `f` if both `o1` and `o2` are not None.")
+  /**
+		Produces the result of `f` if both `o1` and `o2` are not None.
+	**/
   static public function zipWith<T, S, V>(o1: Option<T>, o2: Option<S>, f : T -> S -> V) : Option<V> {
     return switch (o1) {
       case None: None;
@@ -139,7 +173,9 @@ class Options {
 				}
     }
   }
-  @doc('Produces one or other value if only one is defined, or calls `fn` on the two and returns the result')
+  /**
+		Produces one or other value if only one is defined, or calls `fn` on the two and returns the result
+	**/
   static public function oneOrOtherOrBothWith<A>(o1:Option<A>,o2:Option<A>,fn : A -> A -> A):Option<A>{
     return switch (o1){
       case Some(v)  :
@@ -154,28 +190,36 @@ class Options {
         }
     }
   }
-  @doc("Produces an Either where `o1` is on the right, or if None, the result of  `thunk`  on the left.")
+  /**
+		Produces an Either where `o1` is on the right, or if None, the result of  `thunk`  on the left.
+	**/
   static public function orEither<T, S>(o1: Option<S>, thunk: Thunk<T>): Either<T, S> {
     return switch (o1) {
       case None: Eithers.toLeft(thunk());
       case Some(v): Eithers.toRight(v);
     }
   }
-  @doc("If `o1` is None, produce the result of `thunk`.")
+  /**
+		If `o1` is None, produce the result of `thunk`.
+	**/
   static public function orSuccess<T>(o1:Option<Error>,thunk:Thunk<T>):Upshot<T>{
     return switch (o1) {
       case None     : Success(thunk());
       case Some(v)  : Failure(v);
     }
   }
-  @doc("If `o1` is None, produce the result of `thunk`.")
+  /**
+		If `o1` is None, produce the result of `thunk`.
+	**/
   static public function orFailure<T>(o1:Option<T>,thunk:Thunk<Error>):Upshot<T>{
     return switch (o1) {
       case None     : Failure(thunk());
       case Some(v)  : Success(v);
     } 
   }
-  @doc("Produces an Either where `o1` is on the left, or if None, `c`.")
+  /**
+		Produces an Either where `o1` is on the left, or if None, `c`.
+	**/
   static public function orEitherC<T, S>(o1: Option<T>, c: S): Either<S, T> {
     return Options.orEither(o1, c.toThunk());
   }

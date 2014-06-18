@@ -24,11 +24,15 @@ class Types{
   @:noUsing static public inline function definition(v:Dynamic):Class<Dynamic>{
     return Type.getClass(v);
   }
-  @doc("returns `ValueType` of `v`.")
+  /**
+		returns `ValueType` of `v`.
+	**/
   static public inline function vtype(v:Dynamic):ValueType{
     return Type.typeof(v);
   }
-  @doc("Returns `Class` of `name`")
+  /**
+		Returns `Class` of `name`
+	**/
   static public function classify(name:String):Class<Dynamic>{
     return cast Type.resolveClass(name);
   }
@@ -50,17 +54,23 @@ class Types{
     }
     return o;
   }
-  @doc("Produces class name.")
+  /**
+		Produces class name.
+	**/
   static public function name<A>(cls:Class<A>):String{
     return Type.getClassName(cls);
   }
-  @doc("Produces package name")
+  /**
+		Produces package name
+	**/
   static public function pack(cls:Class<Dynamic>):String{
     var o = name(cls).split('.');
         o.pop();
     return o.join('.');
   }
-  @doc("Construct `type` with optional arguments.")
+  /**
+		Construct `type` with optional arguments.
+	**/
   static public function construct<A>(type:Class<A>,?args:Array<Dynamic>):Null<A>{
     args = args == null ? [] : args;
 
@@ -80,15 +90,21 @@ class Types{
     ).valOrC(null);
   }
 
-  @doc("Create `type`, bypassing constructor.")
+  /**
+		Create `type`, bypassing constructor.
+	**/
   static public inline function instantiate<A>(type:Class<A>):A{
     return Type.createEmptyInstance(type);
   }
-  @doc("Produces field names for instance variables.")
+  /**
+		Produces field names for instance variables.
+	**/
   static public inline function locals<A>(type:Class<A>):Array<String>{
     return Type.getInstanceFields(type);
   }
-  @doc("Produces fields names for class statics.")
+  /**
+		Produces fields names for class statics.
+	**/
   static public inline function statics<A>(type:Class<A>):Array<String>{
     return Type.getClassFields(type);
   }
@@ -122,11 +138,13 @@ class Types{
   /*static public inline function is( v : Dynamic, t : Dynamic ) : Bool{
     return Std.is(v,t);
   }*/
-  /*@doc("
+  /*/**
+		
     Do the fields of `obj` fit into the schema of `type`. 
     Specifically, are the fields in `obj` a match or subset of the fields found in `type`.
     This is still no guarantee that they are compatible because the field types may not match.
-  ")
+  
+	**/
   static public function fits(type:Class<T>,obj:Dynamic):Bool{
 
   }*/

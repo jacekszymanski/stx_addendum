@@ -3,7 +3,9 @@ package stx.types;
 import haxe.PosInfos;
 import tink.core.Error;
 
-@doc("Extensible through the use of `FrameworkError`.")
+/**
+		Extensible through the use of `FrameworkError`.
+	**/
 enum Fault{
   ErrorStack(arr:Array<Error>);
   NativeError(err:Dynamic);

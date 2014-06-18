@@ -19,15 +19,20 @@ using stx.Options;
 using stx.Tuples;
 using stx.test.Assert;
 
-@doc("
+/**
+		
   Use in conjunction with stx.Compare for generating arbitrary assertions.
-")
+
+	**/
 class Assert{
 	@:noUsing static public inline function assert<T>(?v:Null<T>,?str:String,?prd:Predicate<Dynamic>,?er:Error,?pos:PosInfos):Void{
     prd = prd == null ? Compare.ntnl()                                    : prd;
 		er  = er  == null ? Error.withData('assert failed',AssertionError(str == null ? Std.string(v)   : str),pos) : er;
+
 		if(!prd.apply(v)){
 			throw(er);
-		}
+		}else{
+      
+    }
 	}
 }

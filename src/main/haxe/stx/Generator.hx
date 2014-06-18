@@ -3,12 +3,14 @@ package stx;
 import haxe.ds.Option;
 using stx.Options;
 
-@doc("
+/**
+		
   An iterable based on values accumulated on a stack by calling a function.
   When the function returns None, the iteration is considered complete.
 
   Each successive value is pushed onto a stack.
-")
+
+	**/
 class Generator<T>{
   public static function create(fn,stack){
     return new Generator(fn,stack);
@@ -48,7 +50,9 @@ class Generator<T>{
       hasNext   : hasNext
     }
   }
-  @doc("Creates an Iterable by calling fn until it returns None, caching the results.")
+  /**
+		Creates an Iterable by calling fn until it returns None, caching the results.
+	**/
   static public function yielding<A>(fn : Void -> Option<A>):Iterable<A>{
     var stack = [];    
     return cast {

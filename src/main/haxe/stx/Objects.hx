@@ -22,7 +22,9 @@ import Type;
 
 typedef Object = {};
 
-@doc("Object defined as {} is different from Dynamic in that it does not allow closures.")
+/**
+		Object defined as {} is different from Dynamic in that it does not allow closures.
+	**/
 class Objects {
   
   @:noUsing static public function unit():Object{
@@ -45,23 +47,31 @@ class Objects {
     var obj   = {}
     return flds.foldLeft(obj,cast Reflects.setFieldTuple.bind(obj));
   }
-  @doc("Return the fields of Object.")
+  /**
+		Return the fields of Object.
+	**/
   static public function fields(o:Object):Iterable<Tuple2<String,Dynamic>>{
     return Reflects.fields(o);
   }
   
-  @doc("Returns the values of the names.")
+  /**
+		Returns the values of the names.
+	**/
   static public function select(d:Object,names:Array<String>):Array<Dynamic>{
     return Tables.select(d,names);
   }
   static public function iterator(d: Object): Iterator<String> {
     return Reflect.fields(d).iterator();
   }
-  @doc("The fields exist.")
+  /**
+		The fields exist.
+	**/
   static public function included(d:Object,flds:Array<String>):Bool{
     return missing(d,flds).isEmpty();
   }
-  @doc("Report fields missing.")
+  /**
+		Report fields missing.
+	**/
   static public function missing(d:Object,flds:Array<String>):Option<Array<String>>{
     return Tables.missing(d,flds);
   }
@@ -69,7 +79,9 @@ class Objects {
   static public function only(d:Object,flds:Array<String>):Bool{
     return Tables.only(d,flds);
   }
-  @doc("The fields are non null.")
+  /**
+		The fields are non null.
+	**/
   static public function defined(d:Object,flds:Array<String>):Bool{
     return fields(d).filter(
       function(x:String,y:Dynamic):Bool{
@@ -77,7 +89,9 @@ class Objects {
       }.tupled()
     ).all( ntnl().apply );
   }
-  @doc("Merges the first level of object keys into a new Object, right hand override.")
+  /**
+		Merges the first level of object keys into a new Object, right hand override.
+	**/
   static public function merge<T0: Object,T1: Object,U : Object>(o0:T0,o1:T1):U{
     return cast Tables.merge(cast o0,cast o1);
   }
