@@ -35,6 +35,7 @@ class ValueTypes{
       case TUnknown : "Unknown";
     }
   }
+  @doc("Returns the package of ValueType.")
   static public function pack(v : ValueType):String{
     return switch (v) {
       case TNull, TInt, TFloat, TBool, TFunction, TObject, TUnknown : 'std';
