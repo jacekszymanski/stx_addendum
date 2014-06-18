@@ -168,7 +168,7 @@ class Eithers {
         }
       );
   }
-  static public function flattenR<A,B,C>(e:Either<A,Either<A,C>>):Either<A,C>{
+  static public function flattenR<A,C>(e:Either<A,Either<A,C>>):Either<A,C>{
     return switch (e) {
       case Left(v)  : Left(v);
       case Right(v) :
@@ -178,7 +178,7 @@ class Eithers {
         }
     }
   }
-  static public function flattenL<A,B,C>(e:Either<Either<C,A>,A>):Either<C,A>{
+  static public function flattenL<A,C>(e:Either<Either<C,A>,A>):Either<C,A>{
     return switch (e) {
       case Right(v)   : Right(v);
       case Left(v)    :
