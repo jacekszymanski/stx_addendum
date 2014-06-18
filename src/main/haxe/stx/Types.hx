@@ -138,14 +138,14 @@ class Types{
   /*static public inline function is( v : Dynamic, t : Dynamic ) : Bool{
     return Std.is(v,t);
   }*/
-  /*/**
+  /**
 		
     Do the fields of `obj` fit into the schema of `type`. 
     Specifically, are the fields in `obj` a match or subset of the fields found in `type`.
     This is still no guarantee that they are compatible because the field types may not match.
   
 	**/
-  static public function fits(type:Class<T>,obj:Dynamic):Bool{
+  /*static public function fits(type:Class<T>,obj:Dynamic):Bool{
 
   }*/
 }

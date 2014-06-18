@@ -41,16 +41,18 @@ class Dates {
   static public function sub(d0:Date,d1:Date):Date{
     return Date.fromTime(d0.getTime()-d1.getTime());
   }
-  /*/**
+  /**
 		snaps `dt` to the nearest `day`
 	**/
+  /*
   static public function day(dt:Date,day:Week):Date{
 
     return Date.fromTime(dt.getTime() - ((dt.getDay() - day.toInt()) % 7) * 24 * 60 * 60 * 1000);
-  }
+  }*/
   /**
 		snaps `dt` to a period `s`.
 	**/
+  /*
   static public function snap(dt:Date,s:DateSpan):Date{
     var time = dt.getTime();
     return switch (s) {
@@ -62,5 +64,6 @@ class Dates {
       case Month  : new Date(dt.getFullYear(), dt.getMonth(), 1, 0, 0, 0);
       case Year   : new Date(dt.getFullYear(), 0, 1, 0, 0, 0);
     }
-  }*/
+  }
+  */
 }
