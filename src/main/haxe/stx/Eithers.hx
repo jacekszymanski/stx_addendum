@@ -1,7 +1,7 @@
 package stx;
 
 import stx.types.*;
-import stx.types.Tuple2;
+import stx.types.Tuple2.*;
 import haxe.ds.Option;
 import tink.core.Either;
 import tink.core.Error;

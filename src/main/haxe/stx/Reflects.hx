@@ -64,7 +64,7 @@ class Reflects{
           #end
           Failure(switch(Type.typeof(d)){
             case TClass(c) if (c.descended(Error))  : d;
-            default                                 : Error.withData(d,NativeError);
+            default                                 : Error.withData(Std.string(d),NativeError);
           });
         }
       }

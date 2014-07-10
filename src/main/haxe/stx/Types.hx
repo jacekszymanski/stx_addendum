@@ -79,7 +79,7 @@ class Types{
     }catch(e:Error){
       throw(e);
     }catch(e:Dynamic){
-      throw Error.withData(e,NativeError(e));
+      throw Error.withData(Std.string(e),NativeError(e));
     }
   }
   @doc("")

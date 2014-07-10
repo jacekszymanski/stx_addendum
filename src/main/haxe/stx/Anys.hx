@@ -252,7 +252,7 @@ class Anys {
       try{
         val = Reflect.field(val,next);
       }catch(e:Dynamic){
-        return End(Error.withData(e,NativeError(e)));
+        return End(Error.withData(Std.string(e),NativeError(e)));
       }
       if(val==null){
         var end = path.last();
@@ -281,7 +281,7 @@ class Anys {
       try{
         val = Reflect.field(val,next);
       }catch(e:Dynamic){
-        return End(Error.withData(e,NativeError(e)));
+        return End(Error.withData(Std.string(e),NativeError(e)));
       }
       if(val==null){
         return Nil;
