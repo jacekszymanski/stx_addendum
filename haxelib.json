@@ -1,0 +1,15 @@
+{
+    "name": "stx_addendum",
+    "url": "https://github.com/0b1kn00b/stx_addendum",
+    "license": "MIT",
+    "tags": ["functional", "comparisons", "monads", "utils"],
+    "description": "Good selection of tools. Tuples (enum variety), Clone, Order, Hasher, Equal, Show implementations + utility classes (Strings,Maths,Bools,Options,Eithers,Iterables and Arrays).",
+    "version": "0.6.3",
+    "releasenote": "proper dependencies",
+    "contributors": ["0b1kn00b"],
+    "dependencies": {
+        "tink_core": "1.0.0-rc.6",
+        "pointwise": "0.6.3"
+    },
+    "classPath": "src/main/haxe"
+}
