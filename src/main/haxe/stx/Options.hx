@@ -30,6 +30,12 @@ class Options {
       case None     : throw 'Option undefined';
     }
   }
+  static public function release<T>(opt:Option<T>):Null<T>{
+    return switch (opt) {
+      case Some(v)  : v;
+      case None     : null;
+    }
+  }
   /**
 		Produces Option.Some(t) if `t` is not null, Option.None otherwise.
 	**/
