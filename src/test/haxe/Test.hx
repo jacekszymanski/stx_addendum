@@ -1,5 +1,6 @@
 package;
 
+import stx.Maps;
 import stx.types.*;
 import stx.Bools;
 import stx.Enums;
