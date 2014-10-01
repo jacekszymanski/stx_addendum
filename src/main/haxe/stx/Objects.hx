@@ -1,5 +1,6 @@
 package stx;
 
+import tink.core.Pair;
 import stx.Compare.*;
 
 using stx.Pairs;
@@ -50,7 +51,7 @@ class Objects {
   /**
 		Return the fields of Object.
 	**/
-  static public function fields(o:Object):Iterable<Tuple2<String,Dynamic>>{
+  static public function fields(o:Object):Iterable<Pair<String,Dynamic>>{
     return Reflects.fields(o);
   }
   
@@ -86,7 +87,7 @@ class Objects {
     return fields(d).filter(
       function(x:String,y:Dynamic):Bool{
         return flds.any(eq(x).apply);
-      }.tupled()
+      }.paired()
     ).all( ntnl().apply );
   }
   /**
@@ -98,7 +99,7 @@ class Objects {
   @doc("")
   static public function toMap(o:Object):StringMap<Dynamic>{
     var map = new StringMap();
-    fields(o).each(map.set.tupled());
+    fields(o).each(map.set.paired());
     return map;
   }
   static public function setField(o:Object,k:String,v:Dynamic):Object{

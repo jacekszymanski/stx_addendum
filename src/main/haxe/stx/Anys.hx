@@ -404,7 +404,7 @@ class Anys {
         }
       ).flatMap(
         function(x){
-          return Reflects.fields(y).foldLeft(x,Reflects.setFieldTuple);
+          return Reflects.fields(y).foldLeft(x,Reflects.setFieldPair);
         }.catching()
       );
   }

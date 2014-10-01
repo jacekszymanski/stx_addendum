@@ -1,6 +1,7 @@
 
 package stx;
 
+using stx.Pairs;
 import haxe.ds.Option;
 import haxe.ds.StringMap;
 
@@ -76,13 +77,13 @@ class Tables{
             if(y!=null){
               Reflects.setField(o,x,y);
             }
-          }.tupled()
+          }.paired()
         );
     return o;
   }
   static public function toMap<T>(o:Table<T>):StringMap<T>{
     var map = new StringMap();
-    fields(o).each(map.set.tupled());
+    fields(o).each(map.set.paired());
     return map;
   }
 }

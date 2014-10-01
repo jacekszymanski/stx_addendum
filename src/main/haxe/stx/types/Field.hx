@@ -1,3 +1,5 @@
 package stx.types;
 
-typedef Field<T> = Tuple2<String,T>;
+import tink.core.Pair;
+
+typedef Field<T> = Pair<String,T>;

@@ -1,5 +1,6 @@
 package stx;
 
+import tink.core.Pair;
 import tink.core.Outcome;
 import stx.types.Fault;
 import stx.Options.option;
@@ -94,6 +95,13 @@ class Reflects{
 		return v;
 	}
   /**
+    Convenience method for accumulating fields in folds
+  **/
+  static public function setFieldPair<A,B>(v:A,t:Pair<String,B>):A{
+    Reflect.setField(v,t.a,t.b);
+    return v;
+  }
+  /**
 		Returns the value of fields `key`, null if it does not exist or is null.
 	**/
   static public function getValue<A,B>(v:A,key:String):Null<B>{
@@ -103,7 +111,7 @@ class Reflects{
 		Returns the value of fields `key`, null if it does not exist or is null.
 	**/
 	static public function getField<A,B>(v:A,key:String):Null<Field<B>>{
-		return tuple2(key,Reflect.field(v,key));
+		return new Pair(key,Reflect.field(v,key));
 	}
   /**
 		Sets the value of field key.

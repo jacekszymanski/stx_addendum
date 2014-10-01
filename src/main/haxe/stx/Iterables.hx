@@ -1,8 +1,9 @@
 package stx;
 
+using stx.Pairs;
 import stx.types.Fault;
 import tink.core.Error;
-import stx.types.Tuple2;
+import tink.core.Pair;
 import stx.types.*;
 
 import stx.Types;
@@ -15,7 +16,7 @@ using stx.Iterables;
 using stx.Generator;
 
 class Iterables {
-  static public inline function unfold<T, R>(initial: T, unfolder: T -> Option<Tuple2<T, R>>): Iterable<R> {
+  static public inline function unfold<T, R>(initial: T, unfolder: T -> Option<Pair<T, R>>): Iterable<R> {
     return {
       iterator: function(): Iterator<R> {
         var _next: Option<R> = None;
@@ -330,7 +331,7 @@ class Iterables {
   /**
 		Produces an Iterable of Tuples where the left side of each element is taken from `iter1` and the right is taken from `iter2`.
 	**/
-  public static function zip<T1, T2>(iter1: Iterable<T1>, iter2: Iterable<T2>): Iterable<Tuple2<T1, T2>> {
+  public static function zip<T1, T2>(iter1: Iterable<T1>, iter2: Iterable<T2>): Iterable<Pair<T1, T2>> {
     var i1 = iter1.iterator();
     var i2 = iter2.iterator();
     
@@ -340,7 +341,7 @@ class Iterables {
       var t1 = i1.next();
       var t2 = i2.next();
       
-      result.push(tuple2(t1,t2));
+      result.push(new Pair(t1,t2));
     }
     
     return result;
@@ -348,7 +349,7 @@ class Iterables {
   /**
 		Zip an Iterable of tuples from a tuple of iterables
 	**/
-  public static function zipup<T1, T2>(tuple:Tuple2<Iterable<T1>, Iterable<T2>>): Iterable<Tuple2<T1, T2>> {
+  public static function zipup<T1, T2>(tuple:Pair<Iterable<T1>, Iterable<T2>>): Iterable<Pair<T1, T2>> {
     var i1 = tuple.fst().iterator();
     var i2 = tuple.snd().iterator();
     
@@ -358,7 +359,7 @@ class Iterables {
       var t1 = i1.next();
       var t2 = i2.next();
       
-      result.push(tuple2(t1,t2));
+      result.push(new Pair(t1,t2));
     }
     return result;
   }
@@ -367,20 +368,20 @@ class Iterables {
 	**/
   static public function zipWith<A, B, C>(a: Iterable<A>, b: Iterable<B>, f : A -> B -> C): Iterable<C> {
     var len = Math.floor(Math.min(a.size(), b.size()));    
-    return a.zip(b).map(f.tupled());
+    return a.zip(b).map(f.paired());
   }
   /**
-		Performs a `zip` where the resulting `Tuple2` has the element on the left, and it's index on the right
+		Performs a `zip` where the resulting `Pair` has the element on the left, and it's index on the right
 	**/
-  static public function zipWithIndex<A>(a: Iterable<A>): Iterable<Tuple2<A, Int>> {
-    return Iterables.zipWithIndexWith(a, tuple2);
+  static public function zipWithIndex<A>(a: Iterable<A>): Iterable<Pair<A, Int>> {
+    return Iterables.zipWithIndexWith(a, function(x,y) return new Pair(x,y));
   }
   /**
 		Performs a `zip` with the right hand parameter is the index of the element.
 	**/
   static public function zipWithIndexWith<A, B>(a: Iterable<A>, f : A -> Int -> B): Iterable<B> {
     var idx = 0.until(a.size());
-    return a.zip(idx).map(f.tupled());
+    return a.zip(idx).map(f.paired());
   }
   /**
 		Append `e` to the end of `iter`.
@@ -534,21 +535,21 @@ class Iterables {
   }
   /**
 		
-   Produces a Tuple2 containing two Arrays, the left being elements where `f(e) == true`, 
+   Produces a Pair containing two Arrays, the left being elements where `f(e) == true`, 
    and the rest in the right.
   
 	**/
-  public static function partition<T>(iter: Iterable<T>, f: T -> Bool): Tuple2<Iterable<T>, Iterable<T>> {
+  public static function partition<T>(iter: Iterable<T>, f: T -> Bool): Pair<Iterable<T>, Iterable<T>> {
     return cast Arrays.partition(iter.toArray(),f);
   }
   /**
 		
-    Produces a Tuple2 containing two Arrays, the difference from partition being that after the predicate
+    Produces a Pair containing two Arrays, the difference from partition being that after the predicate
     returns true once, the rest of the elements will be in the right hand of the Tuple, regardless of
     the result of the predicate.
   
 	**/
-  public static function partitionWhile<T>(iter: Iterable<T>, f: T -> Bool): Tuple2<Iterable<T>, Iterable<T>> { 
+  public static function partitionWhile<T>(iter: Iterable<T>, f: T -> Bool): Pair<Iterable<T>, Iterable<T>> { 
     return cast iter.toArray().partitionWhile(f);
   }
   /**
