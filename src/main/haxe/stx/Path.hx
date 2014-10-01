@@ -31,4 +31,7 @@ abstract Path(String) from String to String{
   public function equals(p:Path){
     return Strings.equals(this,p);
   }
+  public inline function with(sep:String):String{
+    return this.split('/').join(sep);
+  }
 }
