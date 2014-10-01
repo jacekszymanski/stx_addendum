@@ -31,7 +31,40 @@ class Maps{
     }
   }
   static public function patch<V>(map:Map<String,V>,obj:Table<V>,?keepNull:Bool = true){
-    var fn = keepNull ? function(x){return true;} : function(x:Field<V>) {return x.snd() != null;}
+    var fn = keepNull ? function(x){return true;} : function(x:Field<V>) {return x.b != null;}
     obj.fields().filter(fn).each(put.bind(map));
+  }
+}
+class StringMaps{
+  @:noUsing static public function unit<T>():StringMap<T>{
+    return new StringMap();
+  }
+  static public inline function kvs<V>(map:StringMap<V>):Iterator<Tuple2<String,V>>{
+    return map.keys().zip(map.iterator());
+  }
+  static public function copy<V>(map:StringMap<V>):StringMap<V>{
+    var map1 = new StringMap();
+    kvs(map).each(
+      function(l,r){
+        map1.set(l,r);
+      }.tupled()
+    );
+    return map1;
+  }
+  static public function lay<V>(map:StringMap<V>,vl:Tuple2<String,V>):StringMap<V>{
+    var o = copy(map);
+        o.set(vl.fst(),vl.snd());
+    return o;
+  }
+  static public function add<V>(map:StringMap<V>,k:String,v:V):StringMap<V>{
+    var o = copy(map);
+        o.set(k,v);
+    return o;
+  }
+  static public function append<V>(map0:StringMap<V>,map1:StringMap<V>):StringMap<V>{
+    var o = new StringMap();
+    kvs(map0).each(lay.bind(o));
+    kvs(map1).each(lay.bind(o));
+     return o;
   }
 }
