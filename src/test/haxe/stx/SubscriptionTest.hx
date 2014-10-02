@@ -1,0 +1,5 @@
+package stx;
+
+class SubscriptionTest{
+
+}

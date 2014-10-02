@@ -40,9 +40,14 @@ import stx.Types;
 import stx.Upshot;
 import stx.ValueTypes;
 
+import stx.Subscription;
+import stx.Handler;
+
 class Test{
   static function main(){
     new Test();
   }
-  public function new(){}
+  public function new(){
+
+  }
 }
