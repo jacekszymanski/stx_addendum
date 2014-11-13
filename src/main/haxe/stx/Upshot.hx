@@ -1,5 +1,7 @@
 package stx;
 
+using stx.Arrays;
+
 import haxe.ds.Option;
 import stx.types.Tuple2;
 import tink.core.Outcome in TOutcome;
@@ -138,5 +140,18 @@ class Upshots{
       case Failure(f) : fn(f);
     }
     return oc;
+  }
+  static public function orErrors<A>(a:Array<Upshot<A>>):Upshot<Array<A>>{
+    return a.foldLeft(
+      Success([]),
+      function(memo:Upshot<Array<A>>,next:Upshot<A>):Upshot<Array<A>>{
+        return switch ([memo,next]) {
+          case [Success(v0),Success(v1)]  : Success(v0.add(v1)); 
+          case [Failure(e0),Failure(e1)]  : Failure(e0.append(e1));
+          case [Success(v),Failure(e)]    : Failure(e);
+          case [Failure(e),Success(v)]    : Failure(e);
+        }
+      }
+    );
   }
 }

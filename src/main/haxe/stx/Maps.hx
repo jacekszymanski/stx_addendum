@@ -1,5 +1,6 @@
 package stx;
 
+using stx.Reflects;
 using stx.Tuples;
 import stx.types.Tuple2;
 using stx.Tuples;
@@ -66,5 +67,12 @@ class StringMaps{
     kvs(map0).each(lay.bind(o));
     kvs(map1).each(lay.bind(o));
      return o;
+  }
+  static public function toDynamic<V>(map:StringMap<V>):Dynamic{
+    var o : Dynamic = {};
+    kvs(map).each(
+      o.setFieldTuple.bind(o)
+    );
+    return o;
   }
 }
