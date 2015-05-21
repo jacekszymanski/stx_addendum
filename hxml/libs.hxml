@@ -1,2 +1,4 @@
+-lib scuts-core
 -lib tink_core
+-lib tink_macro
 -lib pointwise

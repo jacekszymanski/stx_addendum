@@ -31,7 +31,7 @@ class Enums {
 	/**
 		Produces the full equality of two Enums.
 	**/
-	static public function equals<T>( a : EnumValue, b : EnumValue ):Bool {
+	static public inline function equals<T>( a : EnumValue, b : EnumValue ):Bool {
 		return Type.enumEq(a, b);
 	}
 	/**

@@ -1,2 +1,3 @@
 package stx.types;
-typedef KV<V>           = Tuple2<String,V>;
+
+typedef KV<V> = stx.types.Tuple2<String,V>;

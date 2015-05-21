@@ -1,0 +1,15 @@
+{
+    "folders": [{
+        "follow_symlinks": true,
+        "path": "."
+    }, {
+        "name": "tink",
+        "path": "../lib/tink_core/1,0,0-rc,6"
+    }, {
+        "path": "../haxe/std"
+    },
+    {
+        "name": "tink_macro",
+        "path": "C:/world/prj/haxe/lib/tink_macro/0,1,1-beta"
+    }]
+}

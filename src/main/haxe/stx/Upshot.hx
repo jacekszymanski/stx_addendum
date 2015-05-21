@@ -1,5 +1,6 @@
 package stx;
 
+import stx.types.Chunk;
 using stx.Arrays;
 
 import haxe.ds.Option;
@@ -23,6 +24,13 @@ abstract Upshot<T>(TUpshot<T>) from TUpshot<T> to TUpshot<T>{
   }
   public function map<U>(fn:T->U):Upshot<U>{
     return Upshots.map(this,fn);
+  }
+  public function each<T>(fn:T->Void):Upshot<T>{
+    switch (this) {
+      case Success(v) : fn(v);
+      default :
+    }
+    return this;
   }
   @:tinkish
   public function or(fallback:Upshot<T>):Upshot<T>{

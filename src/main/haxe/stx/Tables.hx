@@ -1,5 +1,6 @@
-
 package stx;
+
+import stx.types.Table;
 
 using stx.Pairs;
 import haxe.ds.Option;
@@ -14,8 +15,6 @@ using stx.Iterables;
 using stx.Options;
 using stx.Compose;
 using stx.Tuples;
-
-typedef Table<T> = Dynamic<T>;
 
 class Tables{
   //to make sense, this needs to use clone.

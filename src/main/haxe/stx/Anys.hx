@@ -1,5 +1,6 @@
 package stx;
 
+import stx.types.Chunk;
 import stx.types.Fault;
 import stx.Order;
 import stx.Options;
@@ -211,14 +212,21 @@ class Anys {
     public static function toBool<T>(value : Null<T>) : Bool {
         return if(value == null) false;
         else if(isInstanceOf(value, Bool)) cast (value,Bool);
-        else if(isInstanceOf(value, Float) || isInstanceOf(value, Int)) cast(value) > 0;
+        else if(isInstanceOf(value, Float) || isInstanceOf(value, Int)){
+          if(value!=null){
+            var v0 : Float = cast value;
+            cast(v0 > 0);
+          }else{
+            false;
+          }
+        } 
         else if(isInstanceOf(value, String)) Strings.isNotEmpty(cast value);
         else if(isInstanceOf(value, Option)) Options.toBool(cast value);
         else if(isInstanceOf(value, Either)) Eithers.toBool(cast value);
         else true;
     }
 
-    public static function toString<T>(value : T, ?func : T->String) : String {
+    @:noUsing public static function string<T>(value : T, ?func : T->String) : String {
         // NOTE (Simon) : Workout if the value has a toString method
         return if(toBool(func)) func(value);
         else Std.string(value);
@@ -266,7 +274,7 @@ class Anys {
     return Chunks.create(val);
   }
   /**
-		Dive into an object using 'a:b:c' notation, returns a Nil if the operation fails
+		Dive into an object using path notation, returns a Nil if the operation fails
 	**/
   static public function diveOption<A,B>(o:A,path:Path):Chunk<B>{
     if(o == null) return Nil;

@@ -24,10 +24,10 @@ class Options {
   @:noUsing static public inline function option<T>(?v:Null<T>):Option<T>{
     return Options.create(v);
   }
-  static public function ensure<T>(opt:Option<T>):T{
+  static public function ensure<T>(opt:Option<T>,?err):T{
     return switch(opt){
       case Some(v)  : v;
-      case None     : throw 'Option undefined';
+      case None     : throw err == null ? new Error(410,'Option undefined') : err;
     }
   }
   static public function release<T>(opt:Option<T>):Null<T>{

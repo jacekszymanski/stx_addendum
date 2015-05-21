@@ -9,11 +9,11 @@ import haxe.ds.StringMap;
 import stx.Compare;
 import stx.Tuples;
 
-
 using stx.Options;
 using stx.Tuples;
 using stx.Functions;
 using stx.Compose;
+using stx.Predicate;
 import stx.types.*;
 
 using stx.Arrays;
@@ -24,8 +24,8 @@ import Type;
 typedef Object = {};
 
 /**
-		Object defined as {} is different from Dynamic in that it does not allow closures.
-	**/
+	Object defined as {} is different from Dynamic in that it does not allow closures.
+**/
 class Objects {
   
   @:noUsing static public function unit():Object{
@@ -86,9 +86,9 @@ class Objects {
   static public function defined(d:Object,flds:Array<String>):Bool{
     return fields(d).filter(
       function(x:String,y:Dynamic):Bool{
-        return flds.any(eq(x).apply);
+        return flds.any(eq(x));
       }.paired()
-    ).all( ntnl().apply );
+    ).all( ntnl() );
   }
   /**
 		Merges the first level of object keys into a new Object, right hand override.
@@ -105,5 +105,10 @@ class Objects {
   static public function setField(o:Object,k:String,v:Dynamic):Object{
     Reflect.setField(o,k,v);
     return o;
+  }
+  static public function putIfNotNull(o:Object,k:String,v:Dynamic):Void{
+    if(v!=null){
+      setField(o,k,v);
+    }
   }
 }

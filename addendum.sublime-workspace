@@ -1,0 +1,4172 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"class",
+				"class	class"
+			],
+			[
+				"Strin",
+				"StringMap	haxe.ds"
+			],
+			[
+				"Anonymou",
+				"AnonymousSink	stx.sink"
+			],
+			[
+				"appl",
+				"_apply"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"set",
+				"setField"
+			],
+			[
+				"With",
+				"WithTest"
+			],
+			[
+				"tink",
+				"tink_macro [0.5.0]"
+			],
+			[
+				"wi",
+				"WithTestClass	class"
+			],
+			[
+				"String",
+				"StringMap"
+			],
+			[
+				"Iter",
+				"Iterator"
+			],
+			[
+				"un",
+				"unsubscribe"
+			],
+			[
+				"I",
+				"ISubscription"
+			],
+			[
+				"Anon",
+				"AnonymousHandler"
+			],
+			[
+				"An",
+				"AnonymousApply"
+			],
+			[
+				"ha",
+				"haxelib.json	haxelib.json"
+			],
+			[
+				"tuple",
+				"Tuple2"
+			],
+			[
+				"Tuple",
+				"Tuple5Hash"
+			],
+			[
+				"Tuple3",
+				"Tuple3Hash"
+			],
+			[
+				"Tuple2",
+				"Tuple2Hash"
+			],
+			[
+				"hash",
+				"hashCode"
+			],
+			[
+				"Pro",
+				"ProductHash"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"Laz",
+				"LazyListInstance"
+			],
+			[
+				"La",
+				"LazyListInstance"
+			],
+			[
+				"obs",
+				"observable"
+			],
+			[
+				"Par",
+				"PartialFunctions	class"
+			],
+			[
+				"PF",
+				"PFMethod	class"
+			],
+			[
+				"Pa",
+				"PartialFunctionType	class"
+			],
+			[
+				"Com",
+				"ComponentTestComponent	class"
+			],
+			[
+				"_",
+				"_withInput"
+			],
+			[
+				"get",
+				"_getter"
+			],
+			[
+				"te",
+				"test_case	Muster TestCase"
+			],
+			[
+				"pre",
+				"Predicate"
+			],
+			[
+				"Loader",
+				"LoaderConfig	class"
+			],
+			[
+				"__",
+				"__triggers__"
+			],
+			[
+				"Ob",
+				"Observer"
+			],
+			[
+				"tag",
+				"tag_behaviours	var"
+			],
+			[
+				"Obje",
+				"ObjectMeta	class"
+			],
+			[
+				"beha",
+				"behaviour"
+			],
+			[
+				"o",
+				"object_defs"
+			],
+			[
+				"eni",
+				"engine"
+			],
+			[
+				"Engine",
+				"PokeEngine"
+			],
+			[
+				"com",
+				"component"
+			],
+			[
+				"Class",
+				"ClassBehaviour"
+			],
+			[
+				"e",
+				"equals"
+			],
+			[
+				"inter",
+				"interests	function"
+			],
+			[
+				"be",
+				"behaviours	var"
+			],
+			[
+				"ti",
+				"__triggers__"
+			],
+			[
+				"Obj",
+				"ObjectMap"
+			],
+			[
+				"Build",
+				"Buildable"
+			],
+			[
+				"En",
+				"EntityType"
+			],
+			[
+				"re",
+				"removed"
+			],
+			[
+				"en",
+				"entities"
+			],
+			[
+				"rem",
+				"removed"
+			],
+			[
+				"Ene",
+				"EntitySystem"
+			],
+			[
+				"TEst",
+				"TestComponent"
+			],
+			[
+				"test",
+				"test_case	Muster TestCase"
+			],
+			[
+				"Rea",
+				"ReactiveComponentType"
+			],
+			[
+				"Ent",
+				"EntityType"
+			],
+			[
+				"Arrowl",
+				"ArrowletCrank"
+			],
+			[
+				"Arrw",
+				"ArrowletTest"
+			],
+			[
+				"with",
+				"withInput"
+			],
+			[
+				"Arrow",
+				"ArrowletType"
+			],
+			[
+				"wit",
+				"withInput"
+			],
+			[
+				"ch",
+				"chunk	chunk"
+			],
+			[
+				"Arro",
+				"ArrowletWindmill"
+			],
+			[
+				"Ev",
+				"EventualTest"
+			],
+			[
+				"Con",
+				"ContinuationTest"
+			],
+			[
+				"tr",
+				"true"
+			],
+			[
+				"on",
+				"onSuccess"
+			],
+			[
+				"Me",
+				"MethodTest"
+			],
+			[
+				"t",
+				"toArray"
+			],
+			[
+				"Ha",
+				"HashTest"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"Comp",
+				"ComponentType"
+			],
+			[
+				"testCa",
+				"TestCase"
+			],
+			[
+				"compo",
+				"component"
+			],
+			[
+				"test_",
+				"test_component"
+			],
+			[
+				"Compo",
+				"ComponentType"
+			],
+			[
+				"comp",
+				"component_map"
+			],
+			[
+				"Entity",
+				"EntityType"
+			],
+			[
+				"DEfa",
+				"DefaultEventManager"
+			],
+			[
+				"Def",
+				"DefaultEvent"
+			],
+			[
+				"hadnler",
+				"handlers"
+			],
+			[
+				"H",
+				"HandlerType"
+			],
+			[
+				"sign",
+				"signal_for"
+			],
+			[
+				"In",
+				"IntMap"
+			],
+			[
+				"Defe",
+				"DefaultEventManager"
+			],
+			[
+				"COmpo",
+				"ComponentType"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"STr",
+				"String"
+			],
+			[
+				"iter",
+				"iterator	var"
+			],
+			[
+				"err",
+				"error_stack	var"
+			],
+			[
+				"Stringi",
+				"StringifyType"
+			],
+			[
+				"Si",
+				"SignalType	class"
+			],
+			[
+				"Sig",
+				"Signals	class"
+			],
+			[
+				"Signal",
+				"SignalType	class"
+			],
+			[
+				"Diso",
+				"Dissolvable"
+			],
+			[
+				"Tet",
+				"TestResult"
+			],
+			[
+				"St",
+				"StackItems"
+			],
+			[
+				"sour",
+				"source1"
+			],
+			[
+				"Obser",
+				"Observable"
+			],
+			[
+				"Test",
+				"TestResult"
+			],
+			[
+				"sourc",
+				"source1"
+			],
+			[
+				"Obs",
+				"Observable"
+			],
+			[
+				"wrt",
+				"writeString"
+			],
+			[
+				"writ",
+				"writeString"
+			],
+			[
+				"r",
+				"reply"
+			],
+			[
+				"Observab",
+				"Observables"
+			],
+			[
+				"bind",
+				"bindFold"
+			],
+			[
+				"del",
+				"deliver	function"
+			],
+			[
+				"canl",
+				"cancel_stack	var"
+			],
+			[
+				"can",
+				"cancel_stack	var"
+			],
+			[
+				"Po",
+				"PosInfos"
+			],
+			[
+				"_on",
+				"_onData	function"
+			],
+			[
+				"_n",
+				"_onDone"
+			],
+			[
+				"_o",
+				"_onData"
+			],
+			[
+				"ca",
+				"cancelled	var"
+			],
+			[
+				"Ractor",
+				"DefaultReactor"
+			],
+			[
+				"Rang",
+				"RangeRange"
+			],
+			[
+				"Bin",
+				"BinaryTrees"
+			],
+			[
+				"future",
+				"Future"
+			],
+			[
+				"ob",
+				"observers	var"
+			],
+			[
+				"obser",
+				"observers	var"
+			],
+			[
+				"su",
+				"subscribe"
+			],
+			[
+				"Ma",
+				"MutexArrayImpl	class"
+			],
+			[
+				"sch",
+				"scheduleTaskWait	function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main/haxe/stx/Arrays.hx",
+			"settings":
+			{
+				"buffer_size": 21602,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Objects.hx",
+			"settings":
+			{
+				"buffer_size": 2774,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Apply.hx",
+			"settings":
+			{
+				"buffer_size": 329,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Reduced.hx",
+			"settings":
+			{
+				"buffer_size": 178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Tuple2.hx",
+			"settings":
+			{
+				"buffer_size": 2134,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Tuples.hx",
+			"settings":
+			{
+				"buffer_size": 11825,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/ds/Set.hx",
+			"settings":
+			{
+				"buffer_size": 970,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/ifs/Model.hx",
+			"settings":
+			{
+				"buffer_size": 101,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/types/Hoare.hx",
+			"settings":
+			{
+				"buffer_size": 68,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/test/haxe/Test.hx",
+			"settings":
+			{
+				"buffer_size": 1187,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Compare.hx",
+			"settings":
+			{
+				"buffer_size": 3128,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/main/haxe/stx/Predicate.hx",
+			"settings":
+			{
+				"buffer_size": 3552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hxml/test/neko.hxml",
+			"settings":
+			{
+				"buffer_size": 144,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/test/haxe/stx/CallableTest.hx",
+			"settings":
+			{
+				"buffer_size": 277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/dayz/prj/haxe/haxe/std/cpp/Function.hx",
+			"settings":
+			{
+				"buffer_size": 694,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/dayz/prj/haxe/haxe/std/haxe/Constraints.hx",
+			"settings":
+			{
+				"buffer_size": 1897,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Haxe/Support/Hxml.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"snippetm",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"e",
+				"Project: Edit"
+			],
+			[
+				"br",
+				"Preferences: Browse Packages"
+			],
+			[
+				"edit ",
+				"Project: Edit"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"bros",
+				"SFTP: Browse Server…"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: Hxml"
+			],
+			[
+				"ug",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"p",
+				"Package Control: Enable Package"
+			],
+			[
+				"pa",
+				"Package Control: List Packages"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"m",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"ma",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"mark",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"stp",
+				"STProjectMaker: Create project"
+			],
+			[
+				"proje",
+				"STProjectMaker: Create project"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"o",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"or",
+				"Origami: Focus on Pane Below"
+			],
+			[
+				"orig",
+				"Origami: Create Pane Below"
+			],
+			[
+				"jslin",
+				"JSLint: Run JSLint"
+			],
+			[
+				"jsli",
+				"JSLint: Run JSLint"
+			],
+			[
+				"jsl",
+				"JSLint: Run JSLint"
+			],
+			[
+				"jslint",
+				"JSLint: Run JSLint"
+			],
+			[
+				"j",
+				"JSLint: Run JSLint"
+			],
+			[
+				"js",
+				"JSLint: Show JSLint Result"
+			],
+			[
+				"JSL",
+				"JSLint: Run JSLint"
+			],
+			[
+				"JSli",
+				"JSLint: Run JSLint"
+			],
+			[
+				"ja",
+				"Set Syntax: Jade"
+			],
+			[
+				"pack	",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"x",
+				"Set Syntax: XML"
+			],
+			[
+				"xm",
+				"Set Syntax: XML"
+			],
+			[
+				"packa	",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Discover Packages"
+			],
+			[
+				"INS",
+				"Package Control: Install Package"
+			],
+			[
+				"Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"bin",
+				"Preferences: Global Settings - User"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 205.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dayz/prj/haxe/addendum",
+		"/home/dayz/prj/haxe/addendum/build",
+		"/home/dayz/prj/haxe/addendum/hxml",
+		"/home/dayz/prj/haxe/addendum/src",
+		"/home/dayz/prj/haxe/addendum/src/main",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ds",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types",
+		"/home/dayz/prj/haxe/addendum/src/test",
+		"/home/dayz/prj/haxe/addendum/src/test/haxe",
+		"/home/dayz/prj/haxe/addendum/src/test/haxe/stx",
+		"/home/dayz/prj/haxe/addendum/test",
+		"/home/dayz/prj/haxe/haxe/std"
+	],
+	"file_history":
+	[
+		"/home/dayz/prj/haxe/haxe/std/neko/net/ServerLoop.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/Serializer.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/events/SyncEvent.hx",
+		"/home/dayz/prj/haxe/haxe/std/Std.hx",
+		"/home/dayz/prj/haxe/addendum/test/java_test/src/stx/Compare_ok_41__Fun.java",
+		"/home/dayz/prj/haxe/haxe/std/Class.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/Predicate.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/Partial.hx",
+		"/home/dayz/prj/haxe/haxe/std/cs/types/Char16.hx",
+		"/home/dayz/prj/haxe/haxe/std/sys/db/Types.hx",
+		"/home/dayz/prj/haxe/haxe/std/Type.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/PredicateType.html",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/PredicateLogic.html",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Predicator.html",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Predicate.html",
+		"/home/dayz/prj/haxe/haxe/std/js/html/PreElement.hx",
+		"/home/dayz/prj/haxe/haxe/std/js/html/PaintRequest.hx",
+		"/home/dayz/prj/haxe/haxe/std/cpp/Pointer.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Compare.html",
+		"/home/dayz/prj/haxe/haxe/std/cpp/zip/Compress.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/ui/ContextMenu.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/error/StopPropagation.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Sink.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Sink.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/utils/SetIntervalTimer.hx",
+		"/home/dayz/.config/sublime-text-3/Packages/User/hx_test.sublime-snippet",
+		"/home/dayz/prj/haxe/haxe/std/flash/errors/TypeError.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/display/NativeMenuItem.hx",
+		"/home/dayz/prj/haxe/haxe/std/python/internal/EnumImpl.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/ds/EnumValueMap.hx",
+		"/home/dayz/prj/haxe/haxe/std/EReg.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/web/Dispatch.hx",
+		"/home/dayz/prj/haxe/haxe/std/js/html/DummyInterface.hx",
+		"/home/dayz/prj/haxe/haxe/std/Date.hx",
+		"/home/dayz/prj/haxe/addendum/[path: /home/dayz/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games]src/main/haxe/stx/Tuple2.hx",
+		"/home/dayz/prj/haxe/addendum/test/java_test/src/stx/PredicateLogic_and_167__Fun.java",
+		"/home/dayz/prj/haxe/haxe/std/js/html/ProcessingInstruction.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/printing/PrintJobOptions.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash8/PrintJob.hx",
+		"/home/dayz/prj/haxe/addendum/test/cpp_test/Test.exp",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Arrays.html",
+		"/home/dayz/prj/haxe/addendum/test/cpp_test/include/stx/Arrays.h",
+		"/home/dayz/prj/haxe/haxe/std/Array.hx",
+		"/home/dayz/prj/haxe/addendum/test/java_test/src/stx/Arrays_union_345__Fun.java",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Pairs.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Tuples.html",
+		"/home/dayz/prj/haxe/haxe/std/python/Tuple.hx",
+		"/home/dayz/prj/haxe/addendum/test/java_test/src/stx/Tuples2_untupled_146__Fun.java",
+		"/home/dayz/prj/haxe/addendum/test/java_test/src/stx/Compose_unit_152__Fun.java",
+		"/home/dayz/prj/haxe/haxe/std/flash/automation/StageCapture.hx",
+		"/home/dayz/prj/haxe/lib/tink_core/1,0,0-rc,6/src/tink/core/Either.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Method.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Method.html",
+		"/home/dayz/prj/haxe/haxe/std/js/html/MimeType.hx",
+		"/home/dayz/prj/haxe/haxe/std/js/html/MapElement.hx",
+		"/home/dayz/prj/haxe/haxe/std/Math.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/ds/Either.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/extern/EitherType.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/events/WeakFunctionClosure.hx",
+		"/home/dayz/prj/haxe/haxe/std/js/html/svg/ComponentTransferFunctionElement.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/utils/Function.hx",
+		"/home/dayz/prj/haxe/haxe/std/cpp/Function.hx",
+		"/home/dayz/prj/haxe/addendum/test/java_test/src/stx/Functions2_uncurry_265__Fun.java",
+		"/home/dayz/prj/haxe/haxe/std/cpp/Float32.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/State.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/KV.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Anys.hx",
+		"/home/dayz/prj/haxe/addendum/build.hxml",
+		"/home/dayz/prj/haxe/addendum/hxml/test/libx.hxml",
+		"/home/dayz/prj/haxe/addendum/hxml/libs.hxml",
+		"/home/dayz/prj/haxe/haxe/std/cpp/Lib.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/display/LoaderInfo.hx",
+		"/home/dayz/prj/haxe/haxe/std/Lambda.hx",
+		"/home/dayz/prj/haxe/haxe/std/js/html/BeforeUnloadEvent.hx",
+		"/home/dayz/prj/haxe/haxe/std/cpp/ConstPointer.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/Readme.md",
+		"/home/dayz/prj/haxe/haxe/std/flash/system/ApplicationDomain.hx",
+		"/home/dayz/prj/haxe/addendum/addendum.sublime-project",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Data.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/events/DataEvent.hx",
+		"/home/dayz/prj/haxe/haxe/std/DateTools.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/DynamicAccess.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Value.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Upshot.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/State.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/Eq.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Lenses.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Effect.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/Table.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Options.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/types/Chunk.hx",
+		"/home/dayz/prj/haxe/addendum/src/test/haxe/Test.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/sink/AnonymousSink.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Tables.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Link.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Arrays.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/EnumFlags.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Types.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Types.html",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Table.html",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Any.html",
+		"/home/dayz/prj/haxe/addendum/build/stx.xml",
+		"/home/dayz/prj/haxe/haxe/std/StdTypes.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Chunk.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Options.html",
+		"/home/dayz/prj/haxe/addendum/test/cpp_test/Options.txt",
+		"/home/dayz/prj/haxe/haxe/std/haxe/ds/Option.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/events/OutputProgressEvent.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Order.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Effect.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/effect/AnonymousEffect.hx",
+		"/home/dayz/prj/haxe/lib/tink_core/1,0,0-rc,6/src/tink/core/Callback.hx",
+		"/home/dayz/prj/haxe/addendum/test/cpp_test/include/tink/core/_Callback/CallbackLink_Impl_.h",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Callbacks.html",
+		"/home/dayz/prj/haxe/haxe/std/haxe/CallStack.hx",
+		"/home/dayz/prj/haxe/lib/tink_core/1,0,0-rc,6/src/tink/CoreApi.hx",
+		"/home/dayz/prj/haxe/haxe/std/js/html/MutationObserver.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/ObjectShow.html",
+		"/home/dayz/prj/haxe/haxe/std/cpp/Object.hx",
+		"/home/dayz/prj/haxe/haxe/std/flash/net/ObjectEncoding.hx",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Chunks.html",
+		"/home/dayz/prj/haxe/addendum/docs/api/stx/Chunk.html",
+		"/home/dayz/prj/haxe/haxe/std/cpp/Char.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/Handler.hx",
+		"/home/dayz/prj/haxe/haxe/std/haxe/remoting/HttpAsyncConnection.hx",
+		"/home/dayz/prj/haxe/addendum/haxelib.bat",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Immix.hx",
+		"/home/dayz/prj/haxe/addendum/src/main/haxe/stx/ifs/Mix.hx"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/dayz/prj/haxe/haxe/std",
+			"C:\\world\\prj\\haxe\\addendum",
+			"C:\\world\\prj\\haxe\\addendum\\src	",
+			"C:\\world\\prj\\haxe\\addendum\\src\\main\\haxe	",
+			"C:\\world\\prj\\haxe\\addendum\\src	",
+			"C:\\world\\prj\\haxe\\addendum	",
+			"C:\\world\\prj\\haxe\\haxe\\std",
+			"C:\\world\\prj\\neko\\neko",
+			"C:\\world\\prj\\haxe\\stax\\src\\main",
+			"C:\\world\\prj\\haxe\\stax",
+			"C:\\world\\prj\\haxe\\stax\\src\\main",
+			"C:\\world\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\test",
+			"C:\\world\\prj\\haxe\\stax",
+			"C:\\world\\prj\\haxe\\stax\\src\\main\\haxe\\bot",
+			"C:\\world\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\bot",
+			"<project>",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\build\\boot",
+			"C:\\world\\stack\\prj\\haxe\\haxe\\std\\js\\html",
+			"C:\\world\\stack\\prj\\haxe\\haxe\\std",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\reactive\\observable",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\async\\arrowlet",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\async",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\async\\dissolvable",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\async\\ifs",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\rx",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\test",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\arrowlet",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\fnc\\ifs",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\neko\\neko\\vm",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\test\\haxe\\rx",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\rx",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx\\rx",
+			"C:\\World\\Stack\\os\\win\\src\\haxe\\std\\cs",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\funked",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src",
+			"C:\\world\\stack\\prj\\haxe\\stax\\src\\main\\haxe\\stx",
+			"C:\\world\\stack\\prj\\haxe\\stax",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\World\\Stack\\os\\win\\src\\haxe\\std",
+			"C:\\world\\stack\\prj\\stax\\src\\main\\haxe\\stx\\rct",
+			"C:\\world\\stack\\prj\\stax\\src",
+			"C:\\world\\stack\\prj\\stax\\src\\main\\haxe\\stx",
+			"C:\\world\\stack\\prj\\stax\\src",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\world\\stack\\prj\\stax\\src",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\world\\stack\\prj\\stax\\src",
+			"C:\\world\\stack\\prj\\stax\\src\\test\\haxe\\stx",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\world\\stack\\prj\\stax\\src",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\world\\stack\\prj\\stax\\src\\main\\haxe\\hx\\ds",
+			"C:\\world\\stack\\prj\\stax\\src\\main\\haxe\\hx",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\world\\stack\\prj\\stax\\src\\main\\haxe\\stx\\js",
+			"C:\\world\\stack\\prj\\stax",
+			"C:\\world\\stack\\prj\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\",
+			"C:\\world\\stack\\projects\\stax\\src\\main",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe\\stx\\io\\json\\types",
+			"C:\\world\\stack\\projects\\stax\\src\\main",
+			"C:\\world\\stack\\projects\\stax\\src\\test\\haxe",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe",
+			"C:\\world\\stack\\projects\\stax\\src\\main",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src\\main",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src\\main",
+			"C:\\world\\stack\\projects\\stax",
+			"C:\\world\\stack\\projects\\stax\\src\\main",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe\\stx",
+			"C:\\world\\stack\\projects\\stax",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe\\stx\\reactive",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe\\stx\\js",
+			"C:\\world\\stack\\projects\\stax",
+			"C:\\world\\stack\\projects\\stax\\src\\test",
+			"C:\\world\\stack\\projects\\stax",
+			"C:\\world\\stack\\projects\\stax\\src\\test",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"stx.util.Objects;",
+			"C:\\world\\stack\\projects\\stax\\src",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe\\stx",
+			"C:\\world\\stack\\projects\\stax\\src\\main\\haxe\\stx\\io\\json",
+			"C:\\world\\stack\\projects\\haxetacy",
+			"C:\\world\\stack\\projects\\jstm",
+			"C:\\world\\stack\\projects\\haxetacy",
+			"C:\\world\\stack\\projects\\jstm"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"TP",
+			"Pr",
+			"TPr",
+			"ISink",
+			"pair",
+			"Pair",
+			"<A, B>",
+			"Pair",
+			"(tuple)",
+			"tuple : Tuple2<A, B>",
+			"T2",
+			"T1",
+			"Function",
+			",\n",
+			"StringMap",
+			"StateType",
+			"<A>(",
+			"<A>",
+			"orElseC",
+			"orChu",
+			"zipN",
+			"chunk:TChunk<A>,",
+			"return",
+			"chk:TChunk<A>",
+			"chk:TChunk<A>,",
+			"static public function",
+			"static public function ",
+			"static public function ensure",
+			"<A",
+			"<A>",
+			" static public function",
+			"static public function",
+			"public",
+			"function all",
+			"Chunk",
+			"_unsubscribe",
+			"Subscription",
+			"subscription",
+			"Subscription",
+			"mul",
+			"rand",
+			"field",
+			"or",
+			"count",
+			"makeE",
+			"Expr",
+			"\\",
+			"o.",
+			"Map<String,V>",
+			"Merge",
+			"Handler",
+			"select",
+			"tupled",
+			"new Tuple2",
+			"tuple2",
+			"Tuple2",
+			"fst()",
+			"snd",
+			"Tuple2",
+			"paired",
+			"new Tuple2",
+			"Pair",
+			"noop",
+			"on set",
+			"class",
+			"@doc\\([\\s\\n]*[\"']([\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*@]+)[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"']([\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*@])+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"']([\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*@]+)[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"']([\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*@])+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*@]+[\\s\\n]*[\"']\\)",
+			"@doc(\"Dive into an object using 'a:b:c' notation, returns an error with the unfound token in the path if the operation fails.\")",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*@]+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+%&*]+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+]+[\\s\\n%&]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\\\'\\[\\]+]+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\']+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>\\/\\]+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+[\\s\\n]*[\"']\\)",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+",
+			"@doc\\([\\s\\n]*",
+			"@doc\\([\\s\\n]*[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+[\"']\\)",
+			"@doc\\([\\s\\n]?[\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\t\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}\\-#\\d_,!=<>]+",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_,!=<>]+",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_,!=<>]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_,!=<>]+[\"']\\)\n",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_,!=<>]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_,]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_]+",
+			"@doc\\([\"'][\\n\\s`\\w.:;\\(\\){}#\\d_]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d_]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#0-9]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#0-9]+",
+			"@doc\\([\"'][\\n\\s\\`\\w.\\:;\\(\\){}#0-9]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#0-9]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}\\#\\d]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}#\\d]+[\"']\\)",
+			"@doc\\([\"'][\\n\\s\\`\\w.:;\\(\\){}]+[\"']\\)",
+			"@doc\\([\"'][\\W]+[\"']\\)",
+			"@doc\\([\"'][\\.]+[\"']\\)",
+			"hex",
+			"sort",
+			"rem",
+			"fold",
+			"on dive",
+			"Object",
+			"NativeFail",
+			"Outcome",
+			"set",
+			"ObjectPath",
+			"set",
+			"  @",
+			":String",
+			"ObjectPath",
+			"<T> ",
+			"Fail",
+			":Fail",
+			"Trigg",
+			"trigger",
+			"stat",
+			",?pos:PosInfos",
+			"on eq",
+			"iter2.si",
+			"iter2",
+			"ObjectE",
+			"size\\(iter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"/**\n\\t\\t$1\n\\t**/",
+			"/**\n$1\n**/",
+			"$1",
+			"$2",
+			"$1",
+			"import stx.Options",
+			"using stx.Options;",
+			"import tink.core.Error;	",
+			"import tink.core.Error;",
+			"unsubscribe",
+			"subscription",
+			"Subscription",
+			"bot",
+			"stx.bot",
+			"valOrUse",
+			"valOrC",
+			"src/boot/haxe/",
+			"stx.reactive.dissolvable",
+			"stx.reactive.ifs.Observable",
+			"stx.reactive.observable",
+			"stx.parser",
+			"stx.async.Contract",
+			"stx.async.Eventual",
+			"hx.reactive",
+			"import hx.reactive.Dispatcher",
+			"stx.async.Continuation",
+			"stx.async.Arrowlet",
+			"stx.async.arrowlet",
+			"stx.test.Assert",
+			"hx.scheduler",
+			"stx",
+			"stx.Show",
+			"stx.lambda.Compose",
+			"stx.extend.Either",
+			"stx.extend.Outcome",
+			"stx.extend.Option",
+			"stx.lambda.Functions",
+			"stx.extend.Outcome",
+			"stx.io.Log",
+			"stx.lambda.Method",
+			"stx.extend.Compare",
+			"stx.extend.Tuples",
+			"stx.extend.$1",
+			"stx.extend",
+			"stx.async",
+			"stx.async.dissolvable",
+			"dissolvable",
+			"stx.async.ifs",
+			"Dissolvable",
+			"stx.async.Disolvable",
+			"Disolvable",
+			"disolvable",
+			"using stx.UnitTest;",
+			"import stx.UnitTest;",
+			"TestCase",
+			"Suite",
+			"extends Suite",
+			"stx.arrowlet",
+			"Arrowlet",
+			"Prelude",
+			"all",
+			"any",
+			"each",
+			"flatMapRight",
+			"flatMapLeft",
+			"mapRight",
+			"mapLeft",
+			"foldRight",
+			"foldLeft",
+			"ArgumentError",
+			"except",
+			"P1->P2->R",
+			"P1->P2->R1",
+			"P1->P2->P3",
+			"$1->Int",
+			"$1->String",
+			"Reduce<$1,Bool>",
+			"Reduce<$1,Int>",
+			"Prelude",
+			"Niladic",
+			"stx.fnc.ifs",
+			"stx.Either",
+			"stx.Option",
+			"rx",
+			"import",
+			"Eventual",
+			"stx.ds.ifs.Collection",
+			"stx.Arrow",
+			"$1(u:UnitArrow):UnitArrow",
+			"$1",
+			"function $1(u:UnitArrow):UnitArrow",
+			"tupled",
+			"function $1(u:UnitArrow):UnitArrow",
+			"LispListInstance",
+			"LispListType",
+			"LispList",
+			"enclose",
+			"fail(",
+			"descended",
+			"import stx.Compare.*;",
+			"import stx.Compare;",
+			"stx.Compare",
+			" ",
+			"import stx.Muster.*;",
+			"Future",
+			"stx.Arrows",
+			"stx.Errors",
+			"stx.rct",
+			"NiladicType",
+			"$1->Void",
+			"Tuples$1",
+			"Tuple3",
+			"Tuple2",
+			"import stx.Tuples;",
+			"Equal.getEqualFor($1)($1,$2)",
+			"Eventual",
+			"Iterator",
+			"ListEnumerator",
+			"ListInstance",
+			"foldLeft",
+			"HashFunction",
+			"tuple$1",
+			"tuple2",
+			"orElseConst",
+			"Callback",
+			"Option",
+			"set",
+			"getHashFor"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main/haxe/stx/Arrays.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21602,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3549,
+								3549
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1489.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/main/haxe/stx/Objects.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2774,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/main/haxe/stx/Apply.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								91,
+								91
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/main/haxe/stx/Reduced.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"open_with_edit": true,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/main/haxe/stx/Tuple2.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"open_with_edit": true,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/main/haxe/stx/Tuples.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4940,
+								4940
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1666.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/main/haxe/stx/ds/Set.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 970,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"open_with_edit": true,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/main/haxe/stx/ifs/Model.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"open_with_edit": true,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/main/haxe/stx/types/Hoare.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								43
+							],
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"open_with_edit": true,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/test/haxe/Test.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1187,
+								1187
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 298.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/main/haxe/stx/Compare.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3128,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								217,
+								217
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/main/haxe/stx/Predicate.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "hxml/test/neko.hxml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Hxml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "src/test/haxe/stx/CallableTest.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								130,
+								130
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"open_with_edit": true,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/home/dayz/prj/haxe/haxe/std/cpp/Function.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/home/dayz/prj/haxe/haxe/std/haxe/Constraints.hx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1897,
+								1897
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": ".",
+									"selector": "source.haxe.2"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"haxe-build-id": 0,
+							"syntax": "Packages/Haxe/Haxe.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.GoSublime-main-output":
+	{
+		"height": 88.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 88.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 225.0
+	},
+	"output.exec":
+	{
+		"height": 251.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.haskell_sublime_load":
+	{
+		"height": 246.0
+	},
+	"output.haxe":
+	{
+		"height": 100.0
+	},
+	"output.hex_viewer_inspector":
+	{
+		"height": 100.0
+	},
+	"output.jsconsole_view":
+	{
+		"height": 0.0
+	},
+	"output.jshint_view":
+	{
+		"height": 0.0
+	},
+	"output.jslint_result_view":
+	{
+		"height": 100.0
+	},
+	"output.php_builtin_server_panel":
+	{
+		"height": 154.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "addendum.sublime-project",
+	"replace":
+	{
+		"height": 104.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"types/pr",
+				"addendum/src/main/haxe/stx/types/Predicate.hx"
+			],
+			[
+				"predi",
+				"addendum/src/main/haxe/stx/Predicate.hx"
+			],
+			[
+				"compar",
+				"addendum/src/main/haxe/stx/Compare.hx"
+			],
+			[
+				"sink",
+				"addendum/src/main/haxe/stx/Sink.hx"
+			],
+			[
+				"test",
+				"addendum/src/test/haxe/Test.hx"
+			],
+			[
+				"test.",
+				"addendum/src/test/haxe/Test.hx"
+			],
+			[
+				"arrays.",
+				"addendum/src/main/haxe/stx/Arrays.hx"
+			],
+			[
+				"arrayu",
+				"addendum/test/java_test/src/stx/Arrays_union_345__Fun.java"
+			],
+			[
+				"tuple2.",
+				"addendum/src/main/haxe/stx/Tuple2.hx"
+			],
+			[
+				"arrays",
+				"addendum/src/main/haxe/stx/Arrays.hx"
+			],
+			[
+				"tuples.hx",
+				"addendum/src/main/haxe/stx/Tuples.hx"
+			],
+			[
+				"metho",
+				"addendum/src/main/haxe/stx/Method.hx"
+			],
+			[
+				"either",
+				"tink/src/tink/core/Either.hx"
+			],
+			[
+				"apply",
+				"addendum/src/main/haxe/stx/Apply.hx"
+			],
+			[
+				"std/function",
+				"std/cpp/Function.hx"
+			],
+			[
+				"buil",
+				"addendum/build.hxml"
+			],
+			[
+				"effect",
+				"addendum/src/main/haxe/stx/Effect.hx"
+			],
+			[
+				"stx/type",
+				"addendum/src/main/haxe/stx/Types.hx"
+			],
+			[
+				"types",
+				"std/sys/db/Types.hx"
+			],
+			[
+				"options",
+				"addendum/src/main/haxe/stx/Options.hx"
+			],
+			[
+				"callback",
+				"tink/src/tink/core/Callback.hx"
+			],
+			[
+				"chunk",
+				"addendum/src/main/haxe/stx/Chunk.hx"
+			],
+			[
+				"handl",
+				"addendum/src/main/haxe/stx/Handler.hx"
+			],
+			[
+				"pairs",
+				"addendum/src/main/haxe/stx/Pairs.hx"
+			],
+			[
+				"order",
+				"addendum/src/main/haxe/stx/Order.hx"
+			],
+			[
+				"maths",
+				"addendum/src/main/haxe/stx/Maths.hx"
+			],
+			[
+				"mat",
+				"std/Math.hx"
+			],
+			[
+				"refle",
+				"std/Reflect.hx"
+			],
+			[
+				"bools",
+				"addendum/src/main/haxe/stx/Bools.hx"
+			],
+			[
+				"strings",
+				"addendum/src/main/haxe/stx/Strings.hx"
+			],
+			[
+				"tables",
+				"addendum/src/main/haxe/stx/Tables.hx"
+			],
+			[
+				"maps",
+				"addendum/src/main/haxe/stx/Maps.hx"
+			],
+			[
+				"objects",
+				"addendum\\src\\main\\haxe\\stx\\Objects.hx"
+			],
+			[
+				"anys",
+				"addendum\\src\\main\\haxe\\stx\\Anys.hx"
+			],
+			[
+				"boun",
+				"tink_macro\\src\\tink\\macro\\Bouncer.hx"
+			],
+			[
+				"bui",
+				"addendum\\build.hxml"
+			],
+			[
+				"libs",
+				"addendum\\hxml\\libs.hxml"
+			],
+			[
+				"context",
+				"std\\haxe\\macro\\Context.hx"
+			],
+			[
+				"exrp",
+				"std\\haxe\\macro\\Expr.hx"
+			],
+			[
+				"haxeli",
+				"addendum\\haxelib.json"
+			],
+			[
+				"haxe",
+				"addendum\\haxelib.json"
+			],
+			[
+				"upsho",
+				"addendum\\src\\main\\haxe\\stx\\Upshot.hx"
+			],
+			[
+				"upsh",
+				"addendum\\src\\main\\haxe\\stx\\Upshot.hx"
+			],
+			[
+				"iterables",
+				"addendum\\src\\main\\haxe\\stx\\Iterables.hx"
+			],
+			[
+				"field",
+				"addendum\\src\\main\\haxe\\stx\\types\\Field.hx"
+			],
+			[
+				"path",
+				"addendum\\src\\main\\haxe\\stx\\Path.hx"
+			],
+			[
+				"map",
+				"std\\Map.hx"
+			],
+			[
+				"iterators",
+				"addendum\\src\\main\\haxe\\stx\\Iterators.hx"
+			],
+			[
+				"compa",
+				"addendum\\src\\main\\haxe\\stx\\Compare.hx"
+			],
+			[
+				"joinp",
+				"addendum\\src\\main\\haxe\\stx\\JoinPattern.hx"
+			],
+			[
+				"join",
+				"std\\js\\html\\audio\\OscillatorNode.hx"
+			],
+			[
+				"tinkerror.hx",
+				"tink\\src\\tink\\core\\Error.hx"
+			],
+			[
+				"error",
+				"addendum\\src\\main\\haxe\\stx\\Errors.hx"
+			],
+			[
+				"tinkerror",
+				"tink\\src\\tink\\core\\Error.hx"
+			],
+			[
+				"eq",
+				"addendum\\src\\main\\haxe\\stx\\Equal.hx"
+			],
+			[
+				"typupsho",
+				"addendum\\src\\main\\haxe\\stx\\types\\Upshot.hx"
+			],
+			[
+				"upshot",
+				"addendum\\src\\main\\haxe\\stx\\Upshot.hx"
+			],
+			[
+				"reflects",
+				"addendum\\src\\main\\haxe\\stx\\Reflects.hx"
+			],
+			[
+				"iterab",
+				"addendum\\src\\main\\haxe\\stx\\Iterables.hx"
+			],
+			[
+				"field.",
+				"addendum\\src\\main\\haxe\\stx\\types\\Field.hx"
+			],
+			[
+				"compose",
+				"addendum\\test\\cpp_test\\include\\stx\\Compose.h"
+			],
+			[
+				"table",
+				"addendum\\src\\main\\haxe\\stx\\Tables.hx"
+			],
+			[
+				"objects.",
+				"addendum\\src\\main\\haxe\\stx\\Objects.hx"
+			],
+			[
+				"haxel",
+				"addendum\\haxelib.json"
+			],
+			[
+				"fault",
+				"addendum\\src\\main\\haxe\\stx\\types\\Fault.hx"
+			],
+			[
+				"tuple2",
+				"addendum\\src\\main\\haxe\\stx\\types\\Tuple2.hx"
+			],
+			[
+				"show",
+				"addendum\\src\\main\\haxe\\stx\\Show.hx"
+			],
+			[
+				"eith",
+				"addendum\\src\\main\\haxe\\stx\\Eithers.hx"
+			],
+			[
+				"fa",
+				"addendum\\src\\main\\haxe\\stx\\types\\Fault.hx"
+			],
+			[
+				"test.h",
+				"addendum\\src\\test\\haxe\\Test.hx"
+			],
+			[
+				"call",
+				"tink\\src\\tink\\core\\Callback.hx"
+			],
+			[
+				"sign",
+				"tink\\src\\tink\\core\\Signal.hx"
+			],
+			[
+				"assert",
+				"addendum\\src\\main\\haxe\\stx\\test\\Assert.hx"
+			],
+			[
+				"valuete",
+				"addendum\\src\\main\\haxe\\stx\\ValueTypes.hx"
+			],
+			[
+				"position",
+				"addendum\\src\\main\\haxe\\stx\\Positions.hx"
+			],
+			[
+				"math",
+				"addendum\\src\\main\\haxe\\stx\\Maths.hx"
+			],
+			[
+				"chunk.",
+				"addendum\\src\\main\\haxe\\stx\\Chunk.hx"
+			],
+			[
+				"outcome",
+				"tink\\src\\tink\\core\\Outcome.hx"
+			],
+			[
+				"fau",
+				"addendum\\src\\main\\haxe\\stx\\types\\Fault.hx"
+			],
+			[
+				"test.hx",
+				"addendum\\src\\test\\haxe\\Test.hx"
+			],
+			[
+				"any",
+				"addendum\\src\\main\\haxe\\stx\\Anys.hx"
+			],
+			[
+				"object",
+				"addendum\\src\\main\\haxe\\stx\\Objects.hx"
+			],
+			[
+				"faul",
+				"addendum\\src\\main\\haxe\\stx\\types\\Fault.hx"
+			],
+			[
+				"thunk",
+				"addendum\\src\\main\\haxe\\stx\\types\\Thunk.hx"
+			],
+			[
+				"callb",
+				"tink\\src\\tink\\core\\Callback.hx"
+			],
+			[
+				"chu",
+				"addendum\\src\\main\\haxe\\stx\\Chunk.hx"
+			],
+			[
+				"tabl",
+				"addendum\\src\\main\\haxe\\stx\\Tables.hx"
+			],
+			[
+				"futu",
+				"tink\\src\\tink\\core\\Future.hx"
+			],
+			[
+				"future",
+				"tink\\src\\tink\\core\\Future.hx"
+			],
+			[
+				"futur",
+				"tink\\src\\tink\\core\\Future.hx"
+			],
+			[
+				"up",
+				"addendum\\src\\main\\haxe\\stx\\Upshot.hx"
+			],
+			[
+				"tuples",
+				"addendum\\src\\main\\haxe\\stx\\Tuples.hx"
+			],
+			[
+				"equ",
+				"addendum\\src\\main\\haxe\\stx\\Equal.hx"
+			],
+			[
+				"comp",
+				"addendum\\src\\main\\haxe\\stx\\Compare.hx"
+			],
+			[
+				"obj",
+				"addendum\\src\\main\\haxe\\stx\\Objects.hx"
+			],
+			[
+				"equal",
+				"addendum\\src\\main\\haxe\\stx\\Equal.hx"
+			],
+			[
+				"iterable",
+				"addendum\\src\\main\\haxe\\stx\\Iterables.hx"
+			],
+			[
+				"clone",
+				"addendum\\src\\main\\haxe\\stx\\Clone.hx"
+			],
+			[
+				"cpp",
+				"addendum\\hxml\\test\\cpp.hxml"
+			],
+			[
+				"enums",
+				"addendum\\src\\main\\haxe\\stx\\Enums.hx"
+			],
+			[
+				"otp",
+				"addendum\\src\\main\\haxe\\stx\\Options.hx"
+			],
+			[
+				"tuple",
+				"addendum\\src\\main\\haxe\\stx\\Tuples.hx"
+			],
+			[
+				"array",
+				"addendum\\src\\main\\haxe\\stx\\Arrays.hx"
+			],
+			[
+				"bu",
+				"addendum\\build.hxml"
+			],
+			[
+				"build",
+				"addendum\\build.hxml"
+			],
+			[
+				"par",
+				"tink\\src\\tink\\core\\Pair.hx"
+			],
+			[
+				"reflec",
+				"addendum\\src\\main\\haxe\\stx\\Reflects.hx"
+			],
+			[
+				"option",
+				"addendum\\src\\main\\haxe\\stx\\Option.hx"
+			],
+			[
+				"erro",
+				"tink\\src\\tink\\core\\Error.hx"
+			],
+			[
+				"prelude",
+				"C:\\world\\prj\\haxe\\stax\\src\\main\\haxe\\Prelude.hx"
+			],
+			[
+				"ups",
+				"addendum\\src\\main\\haxe\\stx\\Upshot.hx"
+			],
+			[
+				"outc",
+				"tink\\src\\tink\\core\\Outcome.hx"
+			],
+			[
+				"build/test/ne",
+				"stax\\build\\test\\neko.hxml"
+			],
+			[
+				"neko",
+				"stax\\build\\dev\\neko.hxml"
+			],
+			[
+				"prelde",
+				"stax\\src\\main\\haxe\\Prelude.hx"
+			],
+			[
+				"functions",
+				"stax\\src\\main\\haxe\\stx\\Functions.hx"
+			],
+			[
+				"neko.",
+				"stax\\build\\boot\\neko.hxml"
+			],
+			[
+				"arrays.hx",
+				"stax\\src\\main\\haxe\\stx\\Arrays.hx"
+			],
+			[
+				"subs",
+				"stax\\src\\main\\haxe\\stx\\async\\Subscription.hx"
+			],
+			[
+				"baseo",
+				"stax\\src\\main\\haxe\\stx\\reactive\\observable\\BaseObservable.hx"
+			],
+			[
+				"waitin",
+				"stax\\src\\main\\haxe\\stx\\async\\ifs\\Waiting.hx"
+			],
+			[
+				"iobserva",
+				"stax\\src\\main\\haxe\\stx\\reactive\\ifs\\Observable.hx"
+			],
+			[
+				"stax",
+				"stax\\src\\main\\haxe\\Stax.hx"
+			],
+			[
+				"task",
+				"stax\\src\\main\\haxe\\hx\\scheduler\\Task.hx"
+			],
+			[
+				"settest",
+				"stax\\src\\test\\haxe\\stx\\ds\\SetTest.hx"
+			],
+			[
+				"threadsc",
+				"stax\\src\\main\\haxe\\hx\\scheduler\\ThreadScheduler.hx"
+			],
+			[
+				"threads",
+				"stax\\src\\main\\haxe\\hx\\scheduler\\ThreadScheduler.hx"
+			],
+			[
+				"sched",
+				"stax\\src\\main\\haxe\\hx\\ifs\\Scheduler.hx"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"serv",
+				"~/prj/haxe/server/server.sublime-project"
+			],
+			[
+				"stre",
+				"~/prj/haxe/streams/streams.sublime-project"
+			],
+			[
+				"",
+				"~/prj/haxe/arrowlets/arrowlets.sublime-project"
+			],
+			[
+				"arro",
+				"~/prj/haxe/arrowlets/arrowlets.sublime-project"
+			],
+			[
+				"poin",
+				"~/prj/haxe/pointwise/pointwise.sublime-project"
+			],
+			[
+				"eve",
+				"~/prj/haxe/events/event.sublime-project"
+			],
+			[
+				"sta",
+				"~/prj/haxe/stax/stax.sublime-project"
+			],
+			[
+				"as",
+				"~/prj/haxe/latah/async.sublime-project"
+			],
+			[
+				"a",
+				"~/prj/haxe/latah/async.sublime-project"
+			],
+			[
+				"scu",
+				"~/prj/haxe/scuts/scuts.sublime-project"
+			],
+			[
+				"poi",
+				"~/prj/haxe/pointwise/pointwise.sublime-project"
+			],
+			[
+				"arr",
+				"~/prj/haxe/arrowlets/arrowlets.sublime-project"
+			],
+			[
+				"ya",
+				"~/prj/haxe/yana/yana.sublime-project"
+			],
+			[
+				"ys",
+				"~/prj/haxe/yana/yana.sublime-project"
+			],
+			[
+				"mo",
+				"~/prj/haxe/model/model.sublime-project"
+			],
+			[
+				"pip",
+				"~/prj/haxe/pipes/pipes.sublime-project"
+			],
+			[
+				"ser",
+				"~/prj/haxe/server/server.sublime-project"
+			],
+			[
+				"add",
+				"~/prj/haxe/addendum/addendum.sublime-project"
+			],
+			[
+				"s",
+				"~/prj/haxe/server/server.sublime-project"
+			],
+			[
+				"asy",
+				"~/prj/haxe/async/async.sublime-project"
+			],
+			[
+				"bot",
+				"~/prj/haxe/bot/bot.sublime-project"
+			],
+			[
+				"h",
+				"C:\\world\\prj\\haxe\\http\\http.sublime-project"
+			],
+			[
+				"po",
+				"C:\\world\\prj\\haxe\\pointwise\\pointwise.sublime-project"
+			],
+			[
+				"new",
+				"C:\\world\\prj\\oldtower\\new_site\\oldtower_new_site.sublime-workspace"
+			],
+			[
+				"str",
+				"C:\\world\\prj\\haxe\\streams\\streams.sublime-project"
+			],
+			[
+				"ASTY",
+				"C:\\world\\prj\\haxe\\async\\async.sublime-project"
+			],
+			[
+				"gr",
+				"C:\\world\\prj\\haxe\\graph\\graph.sublime-project"
+			],
+			[
+				"haxe",
+				"C:\\world\\prj\\haxe\\haxelib\\haxelib.sublime-project"
+			],
+			[
+				"qui",
+				"C:\\world\\prj\\haxe\\quiver\\quiver.sublime-project"
+			],
+			[
+				"pr",
+				"C:\\world\\prj\\haxe\\process\\process.sublime-project"
+			],
+			[
+				"qu",
+				"C:\\world\\prj\\haxe\\quiver\\quiver.sublime-project"
+			],
+			[
+				"htt",
+				"C:\\world\\prj\\haxe\\http\\http.sublime-project"
+			],
+			[
+				"even",
+				"C:\\world\\prj\\haxe\\events\\event.sublime-project"
+			],
+			[
+				"asyn",
+				"C:\\world\\prj\\haxe\\async\\async.sublime-project"
+			],
+			[
+				"stax",
+				"C:\\world\\prj\\haxe\\stax\\stax.sublime-project"
+			],
+			[
+				"rea",
+				"C:\\world\\prj\\haxe\\reactive\\reactive.sublime-project"
+			],
+			[
+				"bo",
+				"C:\\world\\prj\\haxe\\bot\\bot.sublime-project"
+			],
+			[
+				"asyb",
+				"C:\\world\\prj\\haxe\\async\\async.sublime-project"
+			],
+			[
+				"nodeuser",
+				"C:\\world\\prj\\node\\user\\user.sublime-project"
+			],
+			[
+				"p",
+				"C:\\world\\prj\\haxe\\pointwise\\pointwise.sublime-project"
+			],
+			[
+				"ast",
+				"C:\\world\\prj\\haxe\\async\\async.sublime-project"
+			],
+			[
+				"us",
+				"C:\\world\\prj\\haxe\\user\\user.sublime-project"
+			],
+			[
+				"e8",
+				"C:\\world\\prj\\haxe\\e8\\e8.sublime-project"
+			],
+			[
+				"to",
+				"C:\\world\\prj\\haxe\\troyworks\\troyworks.sublime-project"
+			],
+			[
+				"ad",
+				"C:\\world\\prj\\haxe\\addendum\\addendum.sublime-project"
+			],
+			[
+				"y",
+				"C:\\world\\prj\\haxe\\yana\\yana.sublime-project"
+			],
+			[
+				"st",
+				"C:\\world\\prj\\haxe\\stax\\stax.sublime-project"
+			],
+			[
+				"libe",
+				"C:\\world\\prj\\neko\\neko-libevent\\neko-libevent.sublime-project"
+			],
+			[
+				"ffi",
+				"C:\\world\\prj\\haxe\\hxffi\\hxffi.sublime-project"
+			],
+			[
+				"hx_l",
+				"C:\\world\\prj\\haxe\\lib\\hx_lib.sublime-project"
+			],
+			[
+				"cli",
+				"C:\\world\\stack\\prj\\clinic\\clinica\\clinica.sublime-project"
+			],
+			[
+				"clini",
+				"C:\\world\\stack\\prj\\clinic\\clinica\\clinica.sublime-project"
+			],
+			[
+				"yan",
+				"C:\\world\\stack\\prj\\haxe\\yana\\yana.sublime-project"
+			],
+			[
+				"tar",
+				"C:\\world\\stack\\prj\\go\\tardisgo\\tardis.sublime-project"
+			],
+			[
+				"tard",
+				"C:\\world\\stack\\prj\\go\\tardisgo\\tardis.sublime-project"
+			],
+			[
+				"sim",
+				"C:\\world\\stack\\prj\\clinic\\simple_site\\simple_site.sublime-project"
+			],
+			[
+				"has",
+				"C:\\world\\stack\\prj\\haxe\\haxelib\\haxelib.sublime-project"
+			],
+			[
+				"c",
+				"C:\\world\\stack\\prj\\clinic\\clinic.sublime-project"
+			],
+			[
+				"dr",
+				"C:\\world\\stack\\prj\\haxe\\draw\\draw.sublime-project"
+			],
+			[
+				"quiv",
+				"C:\\world\\stack\\prj\\haxe\\quiver\\quiver.sublime-project"
+			],
+			[
+				"hax",
+				"C:\\world\\stack\\prj\\haxe\\haxelib\\haxelib.sublime-project"
+			],
+			[
+				"sc",
+				"C:\\world\\stack\\prj\\haxe\\scuts\\scuts.sublime-project"
+			],
+			[
+				"tro",
+				"/C/world/stack/prj/haxe/arrow/src/main/haxe/reactive/arrow/blaze/troyworks.sublime-project"
+			],
+			[
+				"hsm",
+				"/C/world/stack/prj/haxe/hsm2/hsm2.sublime-project"
+			],
+			[
+				"hs",
+				"/C/world/stack/prj/haxe/hsm2/hsm2.sublime-project"
+			],
+			[
+				"dra",
+				"/C/world/stack/prj/haxe/draw/draw.sublime-project"
+			],
+			[
+				"au",
+				"/C/world/stack/prj/haxe/auth/auth.sublime-project"
+			],
+			[
+				"hx_e",
+				"/C/world/stack/prj/haxe/hx_node_externs/hx_node_externs.sublime-project"
+			],
+			[
+				"lib",
+				"/C/world/stack/prj/c/libevent/libevent.sublime-project"
+			],
+			[
+				"orb",
+				"/C/world/stack/prj/haxe/orbit/orbit.sublime-project"
+			],
+			[
+				"mu",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"hx_",
+				"/C/world/stack/prj/haxe/hx_node_externs/hx_node_externs.sublime-project"
+			],
+			[
+				"quiver",
+				"/C/world/stack/prj/haxe/quiver/quiver.sublime-project"
+			],
+			[
+				"must",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"hx_node",
+				"/C/world/stack/prj/haxe/hx_node_externs/hx_node_externs.sublime-project"
+			],
+			[
+				"Mu",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"QU",
+				"/C/world/stack/prj/haxe/quiver/quiver.sublime-project"
+			],
+			[
+				"M",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"qiu",
+				"/C/world/stack/prj/haxe/quiver/quiver.sublime-project"
+			],
+			[
+				"q",
+				"/C/world/stack/prj/haxe/quiver/quiver.sublime-project"
+			],
+			[
+				"Mus",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"Must",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"w",
+				"/C/world/stack/prj/node/waltz/waltz.sublime-project"
+			],
+			[
+				"tr",
+				"/C/world/stack/prj/haxe/trait/traits4/traits4.sublime-project"
+			],
+			[
+				"tin",
+				"/C/world/stack/prj/haxe/tinkerbell/tinkerbell.sublime-project"
+			],
+			[
+				"m",
+				"/C/world/stack/prj/haxe/muster/muster.sublime-project"
+			],
+			[
+				"user",
+				"/C/world/stack/prj/node/user/user.sublime-project"
+			],
+			[
+				"oauthn",
+				"/C/world/stack/prj/node/oauthn/oauthn.sublime-project"
+			],
+			[
+				"cm",
+				"/G/home/dayz/php/cmf/cmf.sublime-project"
+			],
+			[
+				"cmf",
+				"/G/home/dayz/php/cmf/cmf.sublime-project"
+			],
+			[
+				"o",
+				"/G/home/dayz/php/oauth/oauth.sublime-project"
+			],
+			[
+				"ou",
+				"/G/home/dayz/php/oauth/oauth.sublime-project"
+			],
+			[
+				"oa",
+				"/G/home/dayz/php/oauth/oauth.sublime-project"
+			],
+			[
+				"box",
+				"/G/home/dayz/box.sublime-project"
+			],
+			[
+				"funk",
+				"/C/world/stack/prj/funk/funk.sublime-project"
+			],
+			[
+				"quq",
+				"/C/world/stack/prj/queue/queue.sublime-project"
+			],
+			[
+				"hx_n",
+				"/C/world/stack/prj/hx_node_externs/hx_node_externs.sublime-project"
+			],
+			[
+				"va",
+				"/C/world/stack/prj/vanilla/src/test/haxe/vnl/scala-pipes.sublime-project"
+			],
+			[
+				"van",
+				"/C/world/stack/prj/vanilla/vanilla.sublime-project"
+			],
+			[
+				"vanl",
+				"/C/world/stack/prj/vanilla/vanilla.sublime-project"
+			],
+			[
+				"v",
+				"/C/world/stack/prj/vanilla/vanilla.sublime-project"
+			],
+			[
+				"fun",
+				"/C/world/stack/prj/funk/funk.sublime-project"
+			],
+			[
+				"que",
+				"/C/world/stack/prj/queue/queue.sublime-project"
+			],
+			[
+				"f",
+				"/C/world/stack/prj/funk/funk.sublime-project"
+			],
+			[
+				"sup	",
+				"/C/world/stack/prj/super/super.sublime-project"
+			],
+			[
+				"super",
+				"/C/world/stack/prj/super/super.sublime-project"
+			],
+			[
+				"libserv",
+				"/C/world/stack/prj/tools/libserv/libserv.sublime-project"
+			],
+			[
+				"th",
+				"/C/world/stack/prj/wwx13/three_show/three_show.sublime-project"
+			],
+			[
+				"ar",
+				"/C/world/stack/prj/arw2/arw2.sublime-project"
+			],
+			[
+				"pl",
+				"/C/world/stack/prj/test/stx_plus_test/stx_plus_test.sublime-project"
+			],
+			[
+				"thre",
+				"/C/world/stack/prj/wwx13/three_show/three_show.sublime-project"
+			],
+			[
+				"wa",
+				"/C/world/stack/prj/walkabout/walkabout.sublime-project"
+			],
+			[
+				"wal",
+				"/C/world/stack/prj/walkabout/walkabout.sublime-project"
+			],
+			[
+				"Van",
+				"/C/world/stack/prj/vanilla/vanilla.sublime-project"
+			],
+			[
+				"vna",
+				"/C/world/stack/prj/vanilla/vanilla.sublime-project"
+			],
+			[
+				"use",
+				"/C/world/stack/prj/user/user.sublime-project"
+			],
+			[
+				"it",
+				"/C/world/stack/prj/iteratee/iteratee.sublime-project"
+			],
+			[
+				"u",
+				"/C/world/stack/prj/user/user.sublime-project"
+			],
+			[
+				"ab",
+				"/C/world/stack/prj/abstracttypes/abstracttypes.sublime-project"
+			],
+			[
+				"abs",
+				"/C/world/stack/prj/abstracttypes/abstracttypes.sublime-project"
+			],
+			[
+				"abstr",
+				"/C/world/stack/prj/abstracttypes/abstracttypes.sublime-project"
+			],
+			[
+				"pop",
+				"/C/world/stack/prj/popcorn/popcorn.sublime-project"
+			],
+			[
+				"popco",
+				"/C/world/stack/prj/popcorn/popcorn.sublime-project"
+			],
+			[
+				"stx.w",
+				"/C/world/stack/prj/stax.wiki/stax.wiki.sublime-project"
+			],
+			[
+				"stax.w",
+				"/C/world/stack/prj/stax.wiki/stax.wiki.sublime-project"
+			],
+			[
+				"Vani",
+				"/C/world/stack/prj/Vanilla/vanilla.sublime-project"
+			],
+			[
+				"hxun",
+				"/C/world/stack/prj/hxunit/hxunit.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 356.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 308.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

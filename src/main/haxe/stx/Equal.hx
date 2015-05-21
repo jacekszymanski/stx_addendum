@@ -6,6 +6,7 @@ import haxe.ds.StringMap;
  
 import Type;
 
+using stx.Maps;
 using stx.Tuples;
 using stx.Options;
 using stx.Iterators;
@@ -19,7 +20,7 @@ class Equal{
   static public function getEqualForType<T>(v: ValueType):Eq<T>{
     return switch (v){
       case TNull                                                        : NullEqual.equals;
-      case TInt,TFloat,TBool                                            : __equals__(inline function(x,y) return x == y);
+      case TInt,TFloat,TBool                                            : __equals__(function(x,y) return x == y);
       case TFunction                                                    : __equals__(Reflect.compareMethods); 
       case TClass( c ) if ( c == StringMap  )                           : __equals__(StringMapEqual.equals);
       case TClass( c ) if ( c == Array  )                               : __equals__(ArrayEqual.equals);
@@ -34,7 +35,7 @@ class Equal{
         }
       case TObject      : __equals__(ObjectEquals.equals);
       case TUnknown     : __equals__(
-        inline function(x,y){
+        function(x,y){
           return if(Reflect.hasField(x,'equals')){
             EqualsEquals.equals(x,y);
           }else{
@@ -45,7 +46,7 @@ class Equal{
     }
   }
   public static inline function  __equals__<A>(impl:Eq<Dynamic>):Eq<A> {
-    return inline function(a:Dynamic, b:Dynamic) {
+    return function(a:Dynamic, b:Dynamic) {
       return if(a == b || (a == null && b == null)) true;
         else if(a == null || b == null) false;
         else impl(a, b);
@@ -109,6 +110,23 @@ class ProductEquals{
 class StringMapEqual{
   static public inline function equals<A>(a:StringMap<A>,b:StringMap<A>):Bool{
     return ArrayEqual.equals( a.keys().zip(a.iterator()).toArray(), b.keys().zip(b.iterator()).toArray() );
+  }
+}
+class MapEqual{
+  static public inline function equals<K,V>(a:Map<K,V>,b:Map<K,V>):Bool{
+    var ok = true;
+    if(a.size()!=b.size()){
+      ok = false;
+    }
+    if(ok){
+      for (key in a.keys()){
+        if(!Equal.getEqualFor(a.get(key))(a.get(key),b.get(key))){
+          ok = false;
+          break;
+        }
+      }
+    }
+    return ok;
   }
 }
 class EqualsEquals{

@@ -5,7 +5,6 @@ import tink.core.Error;
 import haxe.PosInfos;
 
 import stx.Tuples;
-import stx.types.*;
  
 import stx.Equal;
 import stx.Compare;
@@ -27,7 +26,7 @@ using stx.test.Assert;
 class Assert{
 	@:noUsing static public inline function assert<T>(?v:Null<T>,?str:String,?prd:Predicate<Dynamic>,?er:Error,?pos:PosInfos):Void{
     prd = prd == null ? Compare.ntnl()                                    : prd;
-		er  = er  == null ? Error.withData('assert failed',AssertionError(str == null ? Std.string(v)   : str),pos) : er;
+		er  = er  == null ? Error.withData(str != null ? str : 'assert failed',AssertionError(str == null ? Std.string(v)   : str),pos) : er;
 
 		if(!prd.apply(v)){
 			throw(er);

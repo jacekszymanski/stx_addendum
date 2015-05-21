@@ -19,19 +19,72 @@ using stx.Compose;
 
 using stx.Chunk;
 
-enum Chunk<V>{
-  Val(v:V);
-  Nil;
-  End(?err:Error);
+import stx.types.Chunk in TChunk;
+
+abstract Chunk<T>(TChunk<T>) from TChunk<T> to TChunk<T>{
+  public function new(v:TChunk<T>){
+    this = v;
+  }
+  public function ensure(?err:Error):T{
+    return Chunks.ensure(this,err);
+  }
+  public function release():Null<T>{
+    return Chunks.release(this);
+  }
+  public function fold<A,Z>(val:T->Z,ers:Null<Error>->Z,nil:Void->Z):Z{
+    return Chunks.fold(this,val,ers,nil);
+  }
+  public function toOptionUpshot(){
+    return Chunks.toOptionUpshot(this);
+  }
+  public function toUpshot(){
+    return Chunks.toUpshot(this);
+  }
+  public function map<U>(fn:T->U):Chunk<U>{
+    return Chunks.map(this,fn);
+  }
+  public function flatMap<U>(fn:T->Chunk<U>):Chunk<U>{
+    return Chunks.flatMap(this,fn);
+  }
+  public function recover(fn:Error -> Chunk<T> ):Chunk<T>{
+    return Chunks.recover(this,fn);
+  }
+  public function zipWith<U,V>(chunk1:Chunk<U>,fn:T->U->V):Chunk<V>{
+    return Chunks.zipWith(this,chunk1,fn);
+  }
+  public function zip<U>(chunk1:TChunk<U>):Chunk<Tuple2<T,U>>{
+    return Chunks.zip(this,chunk1);
+  }
+  public function zipOptionWith<U,V>(chunk1:TChunk<U>,fn:Option<T>->Option<U>->Option<V>):Chunk<V>{
+    return Chunks.zipOptionWith(this,chunk1,fn);
+  }
+  public function getUpshotOrC(n:T):Upshot<T>{
+    return Chunks.getUpshotOrC(this,n);
+  }
+  public function orElseConst(v:T):Chunk<T>{
+    return Chunks.orElseConst(this,v);
+  }
+  public function valueOption():Option<T>{
+    return Chunks.valueOption(this);
+  }
+  public function value():Null<T>{
+    return Chunks.value(this);
+  }
+  public function fail():Null<Error>{
+    return Chunks.fail(this);
+  }
+  public function isDefined():Bool{
+    return Chunks.isDefined(this);
+  }
 }
 class Chunks{
-  @:noUsing static public function create<A>(?c:A):Chunk<A>{
+  @:noUsing static public function create<A>(?c:A):TChunk<A>{
     return (c == null) ? Nil : Val(c);
   }
   /**
-		Produces a `Chunk` of `Array<A>` only if all chunks are defined.
+		Produces a `TChunk` of `Array<A>` only if all chunks are defined.
 	**/
-  static public inline function all<A>(chks:Array<Chunk<A>>,?nilFail:Error):Chunk<Array<A>>{
+  static public function all<A>(chks:Array<TChunk<A>>,?nilFail:Error):TChunk<Array<A>>{
     return chks.foldLeft(
         Val([]),
         function(memo,next){
@@ -47,35 +100,42 @@ class Chunks{
         }
       );
   }
-  static public function ensure<A>(chk:Chunk<A>):Option<A>{
+  static public function ensure<A>(chk:TChunk<A>,?err:Error):A{
     return switch (chk) {
-      case Val(v) : option(v);
-      case Nil    : None;
-      case End(e) : throw e; None;
+      case Val(v) : v;
+      case Nil    : throw err == null ? new Error(410,'Chunk undefined') : err;
+      case End(e) : throw e;
     }
   }
-  static public function fold<A,Z>(chk:Chunk<A>,val:A->Z,ers:Null<Error>->Z,nil:Void->Z):Z{
+  static public function release<A>(chk:TChunk<A>):Null<A>{
+    return switch (chk) {
+      case Val(v) : v;
+      case Nil    : null;
+      case End(e) : throw e;
+    } 
+  }
+  static public function fold<A,Z>(chk:TChunk<A>,val:A->Z,ers:Null<Error>->Z,nil:Void->Z):Z{
     return switch (chk) {
       case Val(v) : val(v);
       case End(e) : ers(e);
       case Nil    : nil();
     }
   }
-  static public function toOptionUpshot<A>(c:Chunk<A>){
+  static public function toOptionUpshot<A>(c:TChunk<A>){
     return switch (c){
       case Nil      : Right(None);
       case Val(v)   : Right(Some(v));
       case End(err) : err == null ? Right(None) : Left(Some(err));
     }
   }
-  static public function toUpshot<A>(c:Chunk<A>){
+  static public function toUpshot<A>(c:TChunk<A>){
     return switch (c){
       case Nil      : Right(null);
       case Val(v)   : Right(v);
       case End(err) : Left(err);
     }
   }
-  static public function map<A,B>(chunk:Chunk<A>,fn:A->B):Chunk<B>{
+  static public function map<A,B>(chunk:TChunk<A>,fn:A->B):TChunk<B>{
     return switch (chunk){
       case Nil      : Nil;
       case Val(v)   : 
@@ -84,28 +144,28 @@ class Chunks{
       case End(err) : End(err);
     }
   }
-  static public function flatten<A>(chk:Chunk<Chunk<A>>):Chunk<A>{
+  static public function flatten<A>(chk:TChunk<TChunk<A>>):TChunk<A>{
     return flatMap(chk,
-      function(x:Chunk<A>){
+      function(x:TChunk<A>){
         return x;
       }
     );
   }
-  static public function flatMap<A,B>(chunk:Chunk<A>,fn:A->Chunk<B>):Chunk<B>{
+  static public function flatMap<A,B>(chunk:TChunk<A>,fn:A->TChunk<B>):TChunk<B>{
     return switch (chunk){
       case Nil      : Nil;
       case Val(v)   : fn(v);
       case End(err) : End(err);
     }
   }
-  static public function recover<A,B>(chunk:Chunk<A>,fn:Error -> Chunk<A> ):Chunk<A>{
+  static public function recover<A,B>(chunk:TChunk<A>,fn:Error -> TChunk<A> ):TChunk<A>{
     return switch (chunk){
       case Nil      : Nil;
       case Val(v)   : Val(v);
       case End(err) : fn(err);
     }
   }
-  static public function zipWith<A,B,C>(chunk0:Chunk<A>,chunk1:Chunk<B>,fn:A->B->C):Chunk<C>{
+  static public function zipWith<A,B,C>(chunk0:TChunk<A>,chunk1:TChunk<B>,fn:A->B->C):TChunk<C>{
     return switch (chunk0){
       case Nil      : Nil;
       case Val(v)   :
@@ -121,10 +181,10 @@ class Chunks{
         }
     }
   }
-  static public function zip<A,B>(chunk0:Chunk<A>,chunk1:Chunk<B>):Chunk<Tuple2<A,B>>{
+  static public function zip<A,B>(chunk0:TChunk<A>,chunk1:TChunk<B>):TChunk<Tuple2<A,B>>{
     return zipWith(chunk0,chunk1,tuple2);
   }
-  static public function zipN<A>(rest:Array<Chunk<A>>):Chunk<Array<A>>{
+  static public function zipN<A>(rest:Array<TChunk<A>>):TChunk<Array<A>>{
     return rest.foldLeft(
       Val([]),
       function(memo,next){
@@ -139,7 +199,7 @@ class Chunks{
       }
     );
   }
-  static public function zipOptionWith<A,B,C>(chunk0:Chunk<A>,chunk1:Chunk<B>,fn:Option<A>->Option<B>->Option<C>):Chunk<C>{
+  static public function zipOptionWith<A,B,C>(chunk0:TChunk<A>,chunk1:TChunk<B>,fn:Option<A>->Option<B>->Option<C>):TChunk<C>{
     return switch (chunk0){
       case Nil      :
         switch (chunk1){
@@ -160,81 +220,81 @@ class Chunks{
         }
     }
   }
-  static public function getUpshotOrC<A>(chk:Chunk<A>,n:A):Upshot<A>{
+  static public function getUpshotOrC<A>(chk:TChunk<A>,n:A):Upshot<A>{
     return switch (chk){
       case Nil      : Success(n);
       case Val(v)   : Success(v);
       case End(err) : Failure(err);
     }
   }
-  static public function orChunkErrC<A>(myb:Option<A>,err:Error):Chunk<A>{
+  static public function orChunkErrC<A>(myb:Option<A>,err:Error):TChunk<A>{
     return switch (myb){
       case Some(v)  : Val(v);
       case None     : End(err);
     }
   }
-  static public function orChunkNil<A>(myb:Option<A>):Chunk<A>{
+  static public function orChunkNil<A>(myb:Option<A>):TChunk<A>{
     return switch (myb){
       case Some(v)  : Val(v);
       case None     : Nil;
     }
   }
-  static public function asChunkEnd<A>(myb:Option<Error>):Chunk<A>{
+  static public function asChunkEnd<A>(myb:Option<Error>):TChunk<A>{
     return switch (myb){
       case Some(v)  : End(v);
       case None     : Nil;
     }
   }
-  static public function orElseConst<A>(chk:Chunk<A>,v:A):Chunk<A>{
+  static public function orElseConst<A>(chk:TChunk<A>,v:A):TChunk<A>{
     return switch (chk){
       case Nil      : Chunks.create(v);
       case Val(v)   : Val(v);
       case End(err) : End(err);
     }
   }
-  static public function valueOption<A>(chk:Chunk<A>):Option<A>{
+  static public function valueOption<A>(chk:TChunk<A>):Option<A>{
     return switch (chk){
       case Nil      : None;
       case Val(v)   : Some(v);
       case End(_)   : None;
     }
   }
-  static public function value<A>(chk:Chunk<A>):Null<A>{
+  static public function value<A>(chk:TChunk<A>):Null<A>{
     return switch (chk){
       case Nil      : null;
       case Val(v)   : v;
       case End(_)   : null;
     }
   }
-  static public function fail<A>(chk:Chunk<A>):Null<Error>{
+  static public function fail<A>(chk:TChunk<A>):Null<Error>{
     return switch (chk){
       case Nil      : null;
       case Val(_)   : null;
       case End(er)  : er;
     }
   }
-  static public function isDefined<A>(chk:Chunk<A>):Bool{
+  static public function isDefined<A>(chk:TChunk<A>):Bool{
     return fold(chk,
       Compose.pure(true),
       Compose.pure(false),
       function() return false
     );
   }
-  static public function success<A>(chk:Chunk<A>,fn:A->Void):Chunk<A>{
+  static public function success<A>(chk:TChunk<A>,fn:A->Void):TChunk<A>{
     switch (chk) {
       case Val(v) : fn(v);
       default     : 
     }
     return chk;
   }
-  static public function failure<A>(chk:Chunk<A>,fn:Null<Error>->Void):Chunk<A>{
+  static public function failure<A>(chk:TChunk<A>,fn:Null<Error>->Void):TChunk<A>{
     switch (chk) {
       case End(v) : fn(v);
       default     : 
     }
     return chk;
   }
-  static public function nothing<A>(chk:Chunk<A>,fn:Void->Void):Chunk<A>{
+  static public function nothing<A>(chk:TChunk<A>,fn:Void->Void):TChunk<A>{
     switch (chk) {
       case Nil    : fn();
       default     : 

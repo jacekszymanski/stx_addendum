@@ -8,3 +8,4 @@
 -neko test/neko_test.n
 
 --connect 2331
+-cmd neko test/neko_test.n

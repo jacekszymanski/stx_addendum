@@ -12,11 +12,9 @@ using stx.Tuples;
 using stx.Compose;
 
 /**
-		
-  Unified function Type (up to arity 5) using Tuples.
-
-	**/
-abstract Method<A,B>(A->B) from A->B to A->B{
+	Unified function Type (up to arity 5) using Tuples.
+**/
+@:callable abstract Method<A,B>(A->B) from A->B to A->B{
 	public function new(v:A->B){
 		this = v;
 	}

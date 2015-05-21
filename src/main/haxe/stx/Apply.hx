@@ -3,7 +3,7 @@ package stx;
 import stx.apply.AnonymousApply;
 import stx.ifs.Apply in IApply;
 
-@:forward abstract Apply<I,O>(IApply<I,O>) from IApply<I,O> to IApply<I,O>{
+@:callable @:forward abstract Apply<I,O>(IApply<I,O>) from IApply<I,O> to IApply<I,O>{
   public function new(v){
     this = v;
   }

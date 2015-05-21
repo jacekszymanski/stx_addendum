@@ -1,7 +1,11 @@
 package stx;
 
+import Map;
 using stx.Reflects;
+import stx.Tuples.*;
+
 using stx.Tuples;
+import stx.types.Table;
 import stx.types.Tuple2;
 using stx.Tuples;
 using stx.Iterators;
@@ -34,6 +38,19 @@ class Maps{
   static public function patch<V>(map:Map<String,V>,obj:Table<V>,?keepNull:Bool = true){
     var fn = keepNull ? function(x){return true;} : function(x:Field<V>) {return x.b != null;}
     obj.fields().filter(fn).each(put.bind(map));
+  }
+  static public function each<K,V>(map:Map<K,V>,fn:K->V->Void):Map<K,V>{
+    for (k in map.keys()){
+      var val = map.get(k);
+      fn(k,val);
+    }
+    return map;
+  }
+  static public inline function kvs<K,V>(map:IMap<K,V>):Iterator<Tuple2<K,V>>{
+    return map.keys().zip(map.iterator());
+  }
+  static public inline function size<K,V>(map:Map<K,V>):Int{
+    return map.keys().size();
   }
 }
 class StringMaps{
@@ -74,5 +91,39 @@ class StringMaps{
       o.setFieldTuple.bind(o)
     );
     return o;
+  }
+  static public function toArray<T>(map:StringMap<T>):Array<Tuple2<String,T>>{
+    return kvs(map).toArray();
+  }
+  static public function stripNullValues<T>(map:StringMap<T>):StringMap<T>{
+    var nxt = new StringMap();
+    kvs(map).each(
+      function(k,v){
+        if(v!=null){
+          nxt.set(k,v);
+        }
+      }.tupled()
+    );
+    return nxt;
+  }
+  static public function toObject(map:StringMap<Dynamic>):Dynamic{
+    var obj : Dynamic = {};
+    kvs(map).each(
+      function(l,r){
+        Reflect.setField(obj,l,r);
+      }.tupled()
+    );
+    return obj;
+  }
+  public static inline function has(h:StringMap<String>, entries:Array<String>):Bool {
+    var ok = true;
+    
+    for (val in entries) {
+      if ( !h.exists(val) ) {
+        ok = false;
+        break;
+      }
+    }
+    return ok;
   }
 }

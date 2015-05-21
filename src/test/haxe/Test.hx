@@ -1,5 +1,16 @@
 package;
 
+import stx.Tuple2;
+
+using Lambda;
+import utest.Runner;
+
+import stx.ds.Set;
+import stx.Sink;
+
+import stx.ifs.Mix;
+import stx.ifs.Immix;
+
 import stx.Maps;
 import stx.types.*;
 import stx.Bools;
@@ -40,14 +51,26 @@ import stx.Types;
 import stx.Upshot;
 import stx.ValueTypes;
 
-import stx.Subscription;
-import stx.Handler;
+import stx.Effect;
+import stx.Sink;
+
+import stx.macro.WithTest;
 
 class Test{
   static function main(){
     new Test();
   }
   public function new(){
-
+    var runner = new Runner();
+    utest.ui.Report.create(runner);
+    var arr : Array<Dynamic> = [
+      new stx.CallableTest()
+    ];
+    arr.iter(
+      function(x){
+        runner.addCase(x);
+      }
+    );
+    runner.run();
   }
 }

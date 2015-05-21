@@ -1,6 +1,9 @@
 package stx;
 
+import stx.types.Predicate in TPredicate;
+
 import stx.types.*;
+
 import stx.Method;
 import stx.Equal;
 import stx.Order;
@@ -11,8 +14,7 @@ using stx.Iterables;
 using stx.Maths;
 using stx.Compose;
 
-/**
-		
+/**		
   This is a good class to use in conjuncture with stx.UnitTest, stx.test.Assert and filters.
 
   ```
@@ -23,8 +25,7 @@ using stx.Compose;
   nice.
 
   Unlikely to screw with other global namespace stuff, but keep an eye on it.
-
-	**/
+**/
 class Compare{
   /**
 		Predicator for value v.
@@ -73,199 +74,49 @@ class Compare{
   /**
 		null-check
 	**/
-  @:noUsing static public inline function nl<T>():Predicate<T>{
+  @:noUsing static public inline function nl<T>():stx.Predicate<T>{
     return function(value:T) {return value == null;}
   }
   /**
 		not-null-check
 	**/
-  @:noUsing static public inline function ntnl<T>():Predicate<T>{
+  @:noUsing static public inline function ntnl<T>():stx.Predicate<T>{
     return function(value:T) {return value != null;}
   }
-  @:noUsing static public inline function alike(e:EnumValue):Predicate<EnumValue>{
+  @:noUsing static public inline function alike(e:EnumValue):stx.Predicate<EnumValue>{
     return stx.Enums.alike.bind(e);
   }
-  @:noUsing static public inline function matches(reg:EReg):Predicate<String>{
+  @:noUsing static public inline function matches(reg:EReg):stx.Predicate<String>{
     return function(str:String){return reg.match(str);}
   }
   /**
 		equals
 	**/
-  @:noUsing static public inline function eq<T>(p:T):Predicate<T>{
+  @:noUsing static public inline function eq<T>(p:T):stx.Predicate<T>{
     return Equal.getEqualFor(p).bind(p);
   }
   /**
 		greater than
 	**/
-  @:noUsing static public inline function gt<T>(p:T):Predicate<T>{
+  @:noUsing static public inline function gt<T>(p:T):stx.Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.eq.bind(1));
   }
   /**
 		greater than or equal
 	**/
-  @:noUsing static public inline function gteq<T>(p:T):Predicate<T>{
+  @:noUsing static public inline function gteq<T>(p:T):stx.Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.gteq.bind(0));
   }
   /**
 		less than
 	**/
-  @:noUsing static public inline function lt<T>(p:T):Predicate<T>{
+  @:noUsing static public inline function lt<T>(p:T):stx.Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.eq.bind(-1));
   }
   /**
 		less than or equal
 	**/
-  @:noUsing static public inline function lteq<T>(p:T):Predicate<T>{
+  @:noUsing static public inline function lteq<T>(p:T):stx.Predicate<T>{
     return Order.getOrderFor(p).bind(p).then(Ints.lteq.bind(0));
-  }
-}
-typedef PredicateType<T> = T -> Bool;
-abstract Predicate<T>(PredicateType<T>) from PredicateType<T> to PredicateType<T>{
-  public function new(v:PredicateType<T>){
-    this = v;
-  }
-  public function apply(v:T):Bool{
-    return this(v);
-  }
-  /**
-		Produces a predicate that succeeds if both succeed.
-	**/
-  public inline function and(p: Predicate<T>): Predicate<T>{
-    return PredicateLogic.and(this,p);
-  }
-  /**
-		Produces a predicate that succeeds if all input predicates succeed.
-	**/
-  public inline function andAll(ps: Iterable<Predicate<T>>): Predicate<T>{
-    return PredicateLogic.andAll(this,ps);
-  }
-  /**
-		Produces a predicate that succeeds if one or other predicates succeed.
-	**/
-  public inline function or(p: Predicate<T>): Predicate<T>{
-    return PredicateLogic.or(this,p);
-  }
-  /**
-		Produces a predicate that succeeds if one or other, but not both predicates succeed.
-	**/
-  public inline function xor(p: Predicate<T>): Predicate<T>{
-    return PredicateLogic.xor(this,p);
-  }
-  /**
-		Produces a predicate that succeeds if the input predicate fails.
-	**/
-  public inline function not():Predicate<T>{
-    return PredicateLogic.not(this);
-  } 
-  /**
-		Produces a predicate that succeeds if any of the input predicates succeed.
-	**/
-  public inline function orAny(ps: Iterable<Predicate<T>>): Predicate<T> {
-    return PredicateLogic.orAny(this,ps);
-  }
-  /**
-		Produces a Method from a Predicate.
-	**/
-  @:to public function toMethod():Method<T,Bool>{
-    return new Method(this);
-  }
-}
-/**
-		Caches function lookup for value.
-	**/
-class Predicator<T>{
-  private var __eq__ : Eq<T>;
-  private var __od__ : Ord<T>;
-  private var __dt__ : T;
-
-  public function new(v:T){
-    __dt__ = v;
-  }
-  public inline function eq():Predicate<T>{
-    return _eq().bind(__dt__);
-  }
-  public inline function gt():Predicate<T>{
-    return _od().bind(__dt__).then(Ints.eq.bind(1));
-  }
-  public inline function gteq():Predicate<T>{
-    return _od().bind(__dt__).then(Ints.gteq.bind(0));
-  }
-  public inline function lt():Predicate<T>{
-    return _od().bind(__dt__).then(Ints.eq.bind(-1));
-  }
-  public inline function lteq():Predicate<T>{
-    return _od().bind(__dt__).then(Ints.lteq.bind(0));
-  }
-  private inline function _eq(){
-    return this.__eq__ = __eq__ == null ? Equal.getEqualFor(__dt__) : __eq__;
-  }
-  private inline function _od(){
-    return this.__od__ = __od__ == null ? Order.getOrderFor(__dt__) : __od__;
-  }
-}
-class PredicateLogic{
-  /**
-		Produces a predicate that succeeds if both succeed.
-	**/
-  static public function and<T>(p1: Predicate<T>, p2: Predicate<T>): Predicate<T> {
-    return function(value:T) {
-      return p1.apply(value) && p2.apply(value);
-    }
-  }
-  /**
-		Produces a predicate that succeeds if all input predicates succeed.
-	**/
-  static public function andAll<T>(p1: Predicate<T>, ps: Iterable<Predicate<T>>): Predicate<T> {
-    return function(value:T) {
-      var result = p1.apply(value);
-      
-      for (p in ps) {
-        if (!result) break;
-        
-        result = result && p.apply(value);
-      }
-      
-      return result;
-    }
-  }
-  /**
-		Produces a predicate that succeeds if one or other predicates succeed.
-	**/
-  static public function or<T>(p1: Predicate<T>, p2: Predicate<T>): Predicate<T> {
-    return function(value:T) {
-      return p1.apply(value) || p2.apply(value);
-    }
-  }
-  /**
-		Produces a predicate that succeeds if one or other , but not both predicates succeed.
-	**/
-  static public function xor<T>(p1: Predicate<T>, p2: Predicate<T>): Predicate<T> {
-    return function(value:T) {
-      return or(p1,p2).apply(value) && (!and(p1,p2).apply(value));
-    }
-  }
-  /**
-		Produces a predicate that succeeds if the input predicate fails.
-	**/
-  static public inline function not<T>(p1: Predicate<T>):Predicate<T>{
-    return function(value:T){
-      return !p1.apply(value);
-    }
-  }  
-  /**
-		Produces a predicate that succeeds if any of the input predicates succeeds.
-	**/
-  static public function orAny<T>(p1: Predicate<T>, ps: Iterable<Predicate<T>>): Predicate<T> {
-    return function(value:T) {
-      var result = p1.apply(value);
-      
-      for (p in ps) {
-        if (result) break;
-        
-        result = result || p.apply(value);
-      }
-      
-      return result;
-    }
   }
 }

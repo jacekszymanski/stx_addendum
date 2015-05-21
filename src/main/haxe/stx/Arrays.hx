@@ -1,5 +1,6 @@
 package stx;
 
+import Map;
 import tink.core.Pair;
 import haxe.ds.Option;
 import stx.types.*;
@@ -13,7 +14,15 @@ using stx.Functions;
 using stx.Arrays;
 
 class Arrays {
-  /*static public function bindFold<R,A,B,M>(arr:Array<A>,pure:B->M,init:B,bind:M->(B->M)->M,fold:B->A->B){
+  static public var NIL : Array<Dynamic> = [];
+  
+  static public function random<T>(arr:Array<T>):T{
+    var len = arr.length;
+    var ind = Math.round( Math.random() * (len - 1));
+    return arr[ind];
+  }
+  /*
+  static public function bindFold<R,A,B,M>(arr:Array<A>,pure:B->M,init:B,bind:M->(B->M)->M,fold:B->A->B){
     return stx.Arrays.foldLeft(arr,
       pure(init),
       function(memo:M,next:A){
@@ -68,6 +77,17 @@ class Arrays {
       
     return n;
   }
+
+  inline static public function mapI<T, S>(a: Array<T>, f: T -> Int -> S): Array<S> {
+    var n: Array<S> = [];
+    var e           = null;
+    for (i in 0...a.length){
+      e = a[i];
+      n.push(f(e,i));
+    };
+      
+    return n;
+  }
   /**
 		
     Using starting var z, run f on each element, storing the result, and passing that result 
@@ -119,6 +139,12 @@ class Arrays {
 		return element of `arr` at index `i`
 	**/
   static public function get<A>(arr:Array<A>,i:Int):A{
+    return arr[i];
+  }
+  /**
+    return element of `arr` at index `i`
+  **/
+  static public function at<A>(arr:Array<A>,i:Int):A{
     return arr[i];
   }
   /**
