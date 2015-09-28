@@ -80,4 +80,30 @@ class Enums {
 	static public function param(e:EnumValue,i:Int):Dynamic{
 		return params(e)[i];
 	}
+
+  /**
+   * Enum extract from a known constructor by nadako
+   *
+   * use:
+   * ```
+   *     var a = haxe.ds.Option.Some(42);
+   *     var s = a.extract(Some(v) => {value: v});
+   * ```
+   * 
+   * see https://gist.github.com/nadako/3db9c067a4e93d64d1f4
+   **/
+  public static macro function extract(value:haxe.macro.Expr.ExprOf<EnumValue>, pattern:haxe.macro.Expr) {
+    return switch (pattern) {
+      case macro $a => $b:
+        macro switch ($value) {
+          case $a:
+            $b;
+          default:
+            throw "no match";
+        }
+      default:
+        throw new haxe.macro.Expr.Error("Invalid enum value extraction pattern", pattern.pos);
+    }
+  }
+
 }
