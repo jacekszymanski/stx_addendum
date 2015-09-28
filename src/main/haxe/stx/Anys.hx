@@ -443,4 +443,13 @@ class Anys {
     }
     return oc;
   }
+  /**
+   * throws msg if a is null, returns a otherwise
+   **/
+  public static function notNull<T>(a: T, ?msg = "null value not allowed here"): T {
+    if (a.isNull()) 
+      throw msg;
+    else
+      return a;
+  }
 }
