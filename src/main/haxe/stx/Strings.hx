@@ -325,6 +325,22 @@ class Strings {
     s = (~/-/g).replace(s, '_');
     return s.toLowerCase();
   }
+  /**
+   * Returns all characters from a that appear after the first occurence of sub, or,
+   * if sub does not occur in a, empty string.
+   **/
+  public static function substringAfter(a: String, sub: String): String {
+    var idx = a.indexOf(sub);
+    if (idx < 0) return "";
+    return a.substring(idx + sub.length, a.length);
+  }
+  /**
+   * Returns all characters from a that appear before the first occurence of sub, or,
+   * if sub does not occur in a, empty string.
+   **/
+  public static function substringBefore(a: String, sub: String): String {
+    return a.substring(0, a.indexOf(sub));
+  }
 }
 class ERegs{
   static public function replaceReg(s:String,reg:EReg,with:String):String {
