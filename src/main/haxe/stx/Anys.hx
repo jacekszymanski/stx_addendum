@@ -27,6 +27,7 @@ import stx.types.*;
 import stx.Eithers;
 import stx.Compare;
 
+using stx.Anys;
 using stx.Options;
 
 typedef Any = Dynamic;
